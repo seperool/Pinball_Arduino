@@ -1,5 +1,5 @@
 ---
-title: "Pinball"
+title: "Projeto Pinball"
 author:
   - Franciellen
   - Maria Clara
@@ -9,26 +9,74 @@ output:
   md_document:
     number_sections: true
     variant: markdown_github
+  odt_document: 
+    number_sections: true
+  pdf_document: 
+    number_sections: true
+    toc: TRUE
+  github_document: 
   html_document:
     number_sections: true
     df_print: paged
   word_document: 
     toc: TRUE
     number_sections: true
-  github_document: 
-  odt_document: 
-    number_sections: true
-  pdf_document: 
-    number_sections: true
-    toc: TRUE
+bibliography: Bibliografia_arduino.bib
+csl: abnt.csl
 ---
 
+\newpage
+
+```{r Pacotes, echo=FALSE, message=FALSE, warning=FALSE}
+library(knitr)
+
+```
+
 # Objetivo
+## Projeto
+
+Desenvolver um brinquedo simples para crianças com transtorno de especto autista (TEA) que envolva circuitos eletricos.\
+O projeto é um pinball construido com Arduino UNO.\
+
+## O que é o Arduino
+O Arduino é uma pequena placa de microcontrolador. Contém diversos terminais que permitem a conexão com dispositivos externos. Os Arduinos podem ser energizados por um computador através de um plugue USB, por uma bateria 9V ou por uma fonte de alimentação. Eles podem ser programados pelo computador e, em seguida, desconectados, permitindo assim que trabalhem independentemente do computador.[@monk2013programaccao, @monk2015programaccao]\
+
+\newpage
 
 # Lista de Materiais
 
+```{r Lista_materiais, echo=FALSE, message=FALSE, warning=FALSE}
+#data.frame
+materiais <- c("Arduino UNO R3",
+                  "Case para Arduino UNO",
+                  "LED Difuso 5mm Vermelho",
+                  "Resistor de 220 Ohm",
+                  "Resistor de 100 Ohm",
+                  "Resistor de 150 Ohm",
+                  "Resistor de 10k Ohm",
+                  "Potenciometro 10k",
+                  "Display LCD 16×2 Backlight Verde",
+                  "Sensor Óptico Reflexivo TCRT5000",
+                  "Cabos Jumper macho-macho",
+                  "Protoboard",
+                  "Suporte Bateria 9V Plug P4",
+                  "Bateria Recarregável 9v De Litio 680mah Rontek"
+                  )
+QDT <- c(1,1,4,4,4,4,4,1,1,4,1,1,1,1)
+tbl_mat <- data.frame(materiais,QDT)
+
+#Tabela
+kable(tbl_mat, col.names = c("Materiais","Quantidade"), align = "lc", caption = "Lista de materiais")
+```
+
 # Desenvolvimento
+
+## Esquemático
 
 # Conclusão
 
 # Apendice A - Programação
+
+\newpage
+
+# Bibliografia
