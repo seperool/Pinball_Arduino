@@ -1,0 +1,34 @@
+---
+title: "Pinball"
+author:
+  - Franciellen
+  - Maria Clara
+  - Sergio Pedro Rodrigues Oliveira
+date: "`r format(Sys.time(), '%d %B %Y')`"
+output:
+  md_document:
+    number_sections: true
+    variant: markdown_github
+  html_document:
+    number_sections: true
+    df_print: paged
+  word_document: 
+    toc: TRUE
+    number_sections: true
+  github_document: 
+  odt_document: 
+    number_sections: true
+  pdf_document: 
+    number_sections: true
+    toc: TRUE
+---
+
+# Objetivo
+
+# Lista de Materiais
+
+# Desenvolvimento
+
+# Conclusão
+
+# Apendice A - Programação
