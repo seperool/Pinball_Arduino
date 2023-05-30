@@ -1,0 +1,23 @@
+ESCRITO EM 30/05/23
+---
+PARA 31/05/23
+---
+Subir github:
+
+Estudar:
+	- Simulação com software Fritzing
+	
+Afazeres:
+	- Terminar Breadboard Fritzing
+	- Arrumar Esquemático Fritzing
+	- Readme.*
+		- Lista de materiais
+			- Parte mecânica
+		- Desenvolvimento
+			- Justificar bateria
+			- Breadboard
+			- Esquemático
+	- Teste Programação/Circuito
+		- Tempo de delay
+		- if-else
+		- Transformação de pinos analogicos em digitais
