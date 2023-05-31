@@ -11,7 +11,7 @@ mapeamento da movimentação da bola os pontos do jogo são marcados ou a
 partida é reiniciada.  
 
 <figure>
-<img src="./Imagem_pinball_arduino.png" style="width:30.0%"
+<img src="./Imagens/Imagem_pinball_arduino.png" style="width:30.0%"
 alt="Exemplo pinball construido a partir de Arduino" />
 <figcaption aria-hidden="true">Exemplo pinball construido a partir de
 Arduino</figcaption>

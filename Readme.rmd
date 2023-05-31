@@ -13,23 +13,23 @@ lof: true
 lot: true
 toc-title: SUMÁRIO
 output:
+  pdf_document: 
+    number_sections: true
+    toc: TRUE
   md_document:
     number_sections: true
     variant: markdown_github
+  html_document:
+    number_sections: true
+    df_print: paged
+  github_document: 
   word_document: 
     toc: TRUE
     number_sections: true
   odt_document: 
     number_sections: true
-  github_document: 
-  html_document:
-    number_sections: true
-    df_print: paged
-  pdf_document: 
-    number_sections: true
-    toc: TRUE
-bibliography: Bibliografia_arduino.bib
-csl: abnt.csl
+bibliography: Rmarkdown/Bibliografia_arduino.bib
+csl: Rmarkdown/abnt.csl
 ---
 
 \newpage
@@ -45,7 +45,7 @@ library(knitr)
 Desenvolver um brinquedo simples para crianças com transtorno de especto autista (TEA) que envolva circuitos elétricos.\
 O projeto é um pinball, de dimensões portatil (um pouco maior que uma caixa de sapatos), construido com **Arduino UNO R3**, quatro **LED** e quatro sensores que mapeiam a movimentação da bola. Com base no mapeamento da movimentação da bola os pontos do jogo são marcados ou a partida é reiniciada.\
 
-![Exemplo pinball construido a partir de Arduino](./Imagem_pinball_arduino.png){ width=30% }
+![Exemplo pinball construido a partir de Arduino](./Imagens/Imagem_pinball_arduino.png){ width=30% }
 
 ## O que é o Arduino
 O Arduino é uma pequena placa de microcontrolador. Contém diversos terminais que permitem a conexão com dispositivos externos. Os Arduinos podem ser energizados por um computador através de um plugue USB, por uma bateria 9V ou por uma fonte de alimentação. Eles podem ser programados pelo computador e, em seguida, desconectados, permitindo assim que trabalhem independentemente do computador.[@monk2013programaccao, @monk2015programaccao]\
@@ -78,6 +78,9 @@ tbl_mat <- data.frame(materiais,QDT)
 kable(tbl_mat, col.names = c("Materiais","Quantidade"), align = "lc", caption = "Lista de materiais")
 ```
 
+
+\newpage
+
 # DESENVOLVIMENTO
 
 ## Montagem do projeto
@@ -85,6 +88,8 @@ kable(tbl_mat, col.names = c("Materiais","Quantidade"), align = "lc", caption = 
 ## Bateria
 
 ## Esquemático
+
+\newpage
 
 # CONCLUSÃO
 
