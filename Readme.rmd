@@ -16,28 +16,34 @@ output:
   md_document:
     number_sections: true
     variant: markdown_github
+  word_document: 
+    toc: TRUE
+    number_sections: true
   odt_document: 
     number_sections: true
-  pdf_document: 
-    number_sections: true
-    toc: TRUE
   github_document: 
   html_document:
     number_sections: true
     df_print: paged
-  word_document: 
-    toc: TRUE
+  pdf_document: 
     number_sections: true
+    toc: TRUE
+header-includes:
+  - \pagenumbering{roman} #adiciona letras romanas minusculas ao cabeçalho
+  - \renewcommand{\listfigurename}{LISTA DE FIGURAS} #nome lista de figuras
+  - \renewcommand{\listtablename}{LISTA DE TABELAS} #nome lista de tabelas
 bibliography: RMarkdown/Bibliografia_arduino.bib
 csl: RMarkdown/abnt.csl
 ---
 
-\newpage
 
 ```{r Pacotes, echo=FALSE, message=FALSE, warning=FALSE}
 library(knitr)
 
 ```
+
+
+\newpage
 
 # OBJETIVO
 ## Projeto Pinball
@@ -50,6 +56,7 @@ O projeto é um pinball, de dimensões portatil (um pouco maior que uma caixa de
 ## O que é o Arduino
 O Arduino é uma pequena placa de microcontrolador. Contém diversos terminais que permitem a conexão com dispositivos externos. Os Arduinos podem ser energizados por um computador através de um plugue USB, por uma bateria 9V ou por uma fonte de alimentação. Eles podem ser programados pelo computador e, em seguida, desconectados, permitindo assim que trabalhem independentemente do computador.[@monk2013programaccao, @monk2015programaccao]\
 
+\pagenumbering{arabic} 
 \newpage
 
 # LISTA DE MATERIAIS
