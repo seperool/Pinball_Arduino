@@ -16,18 +16,18 @@ output:
   md_document:
     number_sections: true
     variant: markdown_github
+  pdf_document: 
+    number_sections: true
+    toc: TRUE
+  html_document:
+    number_sections: true
+    df_print: paged
+  github_document: 
   word_document: 
     toc: TRUE
     number_sections: true
   odt_document: 
     number_sections: true
-  github_document: 
-  html_document:
-    number_sections: true
-    df_print: paged
-  pdf_document: 
-    number_sections: true
-    toc: TRUE
 header-includes:
   - \pagenumbering{roman} #adiciona letras romanas minusculas ao cabeçalho
   - \renewcommand{\listfigurename}{LISTA DE FIGURAS} #nome lista de figuras
@@ -66,6 +66,9 @@ O Arduino é uma pequena placa de microcontrolador. Contém diversos terminais q
 materiais <- c("Arduino UNO R3",
                   "Case para Arduino UNO",
                   "LED Difuso 5mm Vermelho",
+                  "LED Difuso 5mm Amarelo",
+                  "LED Difuso 5mm Azul",
+                  "LED Difuso 5mm Verde",
                   "Resistor de 220 Ohm",
                   "Resistor de 100 Ohm",
                   "Resistor de 150 Ohm",
@@ -79,7 +82,7 @@ materiais <- c("Arduino UNO R3",
                   "Bateria Recarregável 9v De Litio 680mah Rontek",
                   "Bolinha de Gude"
                   )
-QDT <- c(1,1,4,4,4,4,4,1,1,4,1,1,1,1,1)
+QDT <- c(1,1,1,1,2,2,6,6,6,6,1,1,6,1,1,1,1,1)
 tbl_mat <- data.frame(materiais,QDT)
 
 #Tabela

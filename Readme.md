@@ -33,14 +33,17 @@ assim que trabalhem independentemente do computador.Monk (2015)
 |:-----------------------------------------------|:----------:|
 | Arduino UNO R3                                 |     1      |
 | Case para Arduino UNO                          |     1      |
-| LED Difuso 5mm Vermelho                        |     4      |
-| Resistor de 220 Ohm                            |     4      |
-| Resistor de 100 Ohm                            |     4      |
-| Resistor de 150 Ohm                            |     4      |
-| Resistor de 10k Ohm                            |     4      |
+| LED Difuso 5mm Vermelho                        |     1      |
+| LED Difuso 5mm Amarelo                         |     1      |
+| LED Difuso 5mm Azul                            |     2      |
+| LED Difuso 5mm Verde                           |     2      |
+| Resistor de 220 Ohm                            |     6      |
+| Resistor de 100 Ohm                            |     6      |
+| Resistor de 150 Ohm                            |     6      |
+| Resistor de 10k Ohm                            |     6      |
 | Potenciometro 10k                              |     1      |
 | Display LCD 16×2 Backlight Verde               |     1      |
-| Sensor Óptico Reflexivo TCRT5000               |     4      |
+| Sensor Óptico Reflexivo TCRT5000               |     6      |
 | Cabos Jumper macho-macho                       |     1      |
 | Protoboard                                     |     1      |
 | Suporte Bateria 9V Plug P4                     |     1      |
