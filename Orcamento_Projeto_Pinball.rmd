@@ -13,21 +13,21 @@ lof: true
 lot: true
 toc-title: SUMÁRIO
 output:
-  md_document:
-    number_sections: true
-    variant: markdown_github
-  word_document: 
-    toc: TRUE
+  odt_document: 
     number_sections: true
   html_document:
     number_sections: true
     df_print: paged
-  github_document: 
-  odt_document: 
+  md_document:
     number_sections: true
+    variant: markdown_github
+  github_document: 
   pdf_document: 
     number_sections: true
     toc: TRUE
+  word_document: 
+    toc: TRUE
+    number_sections: true
 header-includes:
   - \pagenumbering{roman} #adiciona letras romanas minusculas ao cabeçalho
   - \renewcommand{\listfigurename}{LISTA DE FIGURAS} #nome lista de figuras
@@ -87,9 +87,18 @@ kable(orc_disp_ele,
 
 # SITE DE FORNECEDORES
 
+1. [Maker Hero](https://www.makerhero.com/)\
+<https://www.makerhero.com/>
+
+
+2. [Baú da Eletrônica](https://www.baudaeletronica.com.br/)\
+<https://www.baudaeletronica.com.br/>
+
 \newpage
 
 # RESUMO
+
+## Comparando Preços
 
 \newpage
 
