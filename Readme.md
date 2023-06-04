@@ -25,7 +25,8 @@ terminais que permitem a conexão com dispositivos externos. Os Arduinos
 podem ser energizados por um computador através de um plugue USB, por
 uma bateria 9V ou por uma fonte de alimentação. Eles podem ser
 programados pelo computador e, em seguida, desconectados, permitindo
-assim que trabalhem independentemente do computador.Monk (2015)  
+assim que trabalhem independentemente do computador.Evans, Noble e
+Hochenbaum (2013)  
 
 # 2 LISTA DE MATERIAIS
 
@@ -54,13 +55,47 @@ Lista de materiais
 
 # 3 DESENVOLVIMENTO
 
-## 3.1 Desenho do pinball
+## 3.1 Testes
 
-## 3.2 Bateria
+Antes do projeto finalizado, foram feitos dois testes do prototipo do
+circuito eletrônico.  
 
-## 3.3 Esquemático
+1.  O primeiro para averiguar como seria o circuito na sua forma mais
+    simples, apenas um sensor óptico, um *LED* e uma placa de *LCD*, e a
+    programação básica do Arduino para essa situação.  
+    Os principais fatores considerados foram:  
 
-## 3.4 Montagem do projeto
+-   A estrutura básica do circuito.  
+-   O funcionamento do *LCD*.  
+-   A programação base emplementada para unir esses componentes (sensor
+    óptico, *LED* e placa de *LCD*).  
+
+1.  O segundo experimento foi para ampliar o circuito, tornando mais
+    proximo do real, seis sensores e seis *LEDs*, averiguar a
+    programação como observada no Apêndice A com suas peculiaridades
+    de:  
+
+-   Definir os pinos de cada componente eletrônico.  
+-   A disposição e o sistema de cores definido para os *LEDs*,
+    relacionando os sensores e *LEDs*.  
+-   Transformação de pinos analógicos para digitais no *Arduino* através
+    de programação, para comportar todos os componentes.  
+-   Testar da estrutura condicional (*if-else*) da programação.  
+-   O tempo ideal de *delay* para reconhecimento dos sensores do
+    objeto.  
+-   Definir e testar o sistema de pontuação do jogo.  
+
+## 3.2 Desenho do pinball
+
+Foi projetado a estrutura do pinball e com base nas medidas foi possível
+mensurar as distâncias de fios e a disposição dos dispositivos
+eletrônicos no Pinball.  
+
+## 3.3 Bateria
+
+## 3.4 Esquemático
+
+## 3.5 Montagem do projeto
 
 # 4 CONCLUSÃO
 
@@ -174,6 +209,10 @@ Lista de materiais
     }
 
 # 6 BIBLIOGRAFIA
+
+EVANS, M.; NOBLE, J.; HOCHENBAUM, J. **[Arduino em
+Ação](https://books.google.com.br/books?id=tig0CgAAQBAJ)**. \[s.l.\]
+Novatec Editora, 2013.
 
 MONK, S. **Programação com Arduino: começando com Sketches**. \[s.l.\]
 Bookman Editora, 2013.

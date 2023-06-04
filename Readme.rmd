@@ -13,12 +13,12 @@ lof: true
 lot: true
 toc-title: SUMÁRIO
 output:
-  md_document:
-    number_sections: true
-    variant: markdown_github
   pdf_document: 
     number_sections: true
     toc: TRUE
+  md_document:
+    number_sections: true
+    variant: markdown_github
   html_document:
     number_sections: true
     df_print: paged
@@ -54,7 +54,7 @@ O projeto é um pinball, de dimensões portatil (um pouco maior que uma caixa de
 ![Exemplo pinball construido a partir de Arduino](RMarkdown/Imagens/Imagem_pinball_arduino.png){ width=30% }
 
 ## O que é o Arduino
-O Arduino é uma pequena placa de microcontrolador. Contém diversos terminais que permitem a conexão com dispositivos externos. Os Arduinos podem ser energizados por um computador através de um plugue USB, por uma bateria 9V ou por uma fonte de alimentação. Eles podem ser programados pelo computador e, em seguida, desconectados, permitindo assim que trabalhem independentemente do computador.[@monk2013programaccao, @monk2015programaccao]\
+O Arduino é uma pequena placa de microcontrolador. Contém diversos terminais que permitem a conexão com dispositivos externos. Os Arduinos podem ser energizados por um computador através de um plugue USB, por uma bateria 9V ou por uma fonte de alimentação. Eles podem ser programados pelo computador e, em seguida, desconectados, permitindo assim que trabalhem independentemente do computador.[@monk2013programaccao, @monk2015programaccao,@evans2013arduino]\
 
 \pagenumbering{arabic} 
 \newpage
@@ -89,9 +89,31 @@ tbl_mat <- data.frame(materiais,QDT)
 kable(tbl_mat, col.names = c("Materiais","Quantidade"), align = "lc", caption = "Lista de materiais")
 ```
 
+
+\newpage
+
 # DESENVOLVIMENTO
 
+## Testes
+
+Antes do projeto finalizado, foram feitos dois testes do prototipo do circuito eletrônico.\
+
+1. O primeiro para averiguar como seria o circuito na sua forma mais simples, apenas um sensor óptico, um *LED* e uma placa de *LCD*, e a programação básica do Arduino para essa situação.\
+Os principais fatores considerados foram:\
+- A estrutura básica do circuito.\
+- O funcionamento do *LCD*.\
+- A programação base emplementada para unir esses componentes (sensor óptico, *LED* e placa de *LCD*).\
+2. O segundo experimento foi para ampliar o circuito, tornando mais proximo do real, seis sensores e seis *LEDs*, averiguar a programação como observada no Apêndice A com suas peculiaridades de:\
+- Definir os pinos de cada componente eletrônico.\
+- A disposição e o sistema de cores definido para os *LEDs*, relacionando os sensores e *LEDs*.\
+- Transformação de pinos analógicos para digitais no *Arduino* através de programação, para comportar todos os componentes.\
+- Testar da estrutura condicional (*if-else*) da programação.\
+- O tempo ideal de *delay* para reconhecimento dos sensores do objeto.\
+- Definir e testar o sistema de pontuação do jogo.\
+
 ## Desenho do pinball
+
+Foi projetado a estrutura do pinball e com base nas medidas foi possível mensurar as distâncias de fios e a disposição dos dispositivos eletrônicos no Pinball.\
 
 ## Bateria
 
