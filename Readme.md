@@ -38,14 +38,14 @@ Hochenbaum (2013)
 | LED Difuso 5mm Amarelo                         |     1      |
 | LED Difuso 5mm Azul                            |     2      |
 | LED Difuso 5mm Verde                           |     2      |
-| Resistor de 220 Ohm                            |     6      |
-| Resistor de 100 Ohm                            |     6      |
+| Resistor de 330 Ohm                            |     6      |
 | Resistor de 150 Ohm                            |     6      |
 | Resistor de 10k Ohm                            |     6      |
 | Potenciometro 10k                              |     1      |
 | Display LCD 16×2 Backlight Verde               |     1      |
 | Sensor Óptico Reflexivo TCRT5000               |     6      |
 | Cabos Jumper macho-macho                       |     1      |
+| Tubo Termo Retrátil                            |     1      |
 | Protoboard                                     |     1      |
 | Suporte Bateria 9V Plug P4                     |     1      |
 | Bateria Recarregável 9v De Litio 680mah Rontek |     1      |
@@ -93,7 +93,10 @@ eletrônicos no Pinball.
 
 ## 3.3 Bateria
 
-## 3.4 Esquemático
+## 3.4 Circuito do Arduino
+
+![Circuito do Arduino com seis sensores ópticos, seis *LEDs* e um
+*LCD*](./RMarkdown/Imagens/Pinball_Circuit.png)
 
 ## 3.5 Montagem do projeto
 
@@ -105,37 +108,37 @@ eletrônicos no Pinball.
     #include <LiquidCrystal.h>
 
     //Definindo os pinos que serão utilizados para ligação ao display LCD
-    LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
+    LiquidCrystal lcd(6, 7, 5, 4, 3, 2);
 
     //Definindo pinos dos LED
-    int pinoLed_1 = 8; //Pino digital utilizado pelo LED 1 - Verde
-    int pinoLed_2 = 9; //Pino digital utilizado pelo LED 2 - Azul
-    int pinoLed_3 = 10; //Pino digital utilizado pelo LED 3 - Amarelo
-    int pinoLed_4 = 13; //Pino digital utilizado pelo LED 4 - Vermelho
-    int pinoLed_5 = 16; //Pino analogico A2 transformado em pino digital utilizado pelo LED 5 - Verde
-    int pinoLed_6 = 17; //Pino analogico A3 transformado em pino digital utilizado pelo LED 6 - Azul
+    int pinoLed_1 = 13; //Pino digital utilizado pelo LED 1 - Azul
+    int pinoLed_2 = 12; //Pino digital utilizado pelo LED 2 - Verde
+    int pinoLed_3 = 11; //Pino digital utilizado pelo LED 3 - Amarelo
+    int pinoLed_4 = 10; //Pino digital utilizado pelo LED 4 - Vermelho
+    int pinoLed_5 = 9; //Pino digital utilizado pelo LED 5 - Verde
+    int pinoLed_6 = 8; //Pino digital utilizado pelo LED 6 - Azul
 
     // Cores LED e Pontos
-    // Verde = LED 1 e 5 = 1 ponto
-    // Azul = LED 2 e 6 = 2 ponto
+    // Azul = LED 1 e 6 = 1 ponto
+    // Verde = LED 2 e 5 = 2 ponto
     // Amarelo = LED 3 = 3 ponto
     // Vermelho = LED 4 = 0 ponto
 
     //Definindo pinos dos sensores óptico tcrt5000
-    int pinoSensor_1 = 7; //Pino digital utilizado pelo sensor 1
-    int pinoSensor_2 = 6; //Pino digital utilizado pelo sensor 2
-    int pinoSensor_3 = 14; //Pino analogico A0 transformado em pino digital utilizado pelo sensor 3
-    int pinoSensor_4 = 15; //Pino analogico A1 transformado em pino digital utilizado pelo sensor 4
+    int pinoSensor_1 = 14; //Pino analogico A0 transformado em pino digital utilizado pelo sensor 1
+    int pinoSensor_2 = 15; //Pino analogico A1 transformado em pino digital utilizado pelo sensor 2
+    int pinoSensor_3 = 16; //Pino analogico A2 transformado em pino digital utilizado pelo sensor 3
+    int pinoSensor_4 = 17; //Pino analogico A3 transformado em pino digital utilizado pelo sensor 4
     int pinoSensor_5 = 18; //Pino analogico A4 transformado em pino digital utilizado pelo sensor 5
     int pinoSensor_6 = 19; //Pino analogico A5 transformado em pino digital utilizado pelo sensor 6
 
     // Relação entre LED e sensores - Pinos
-    // pinoSensor_1 -> pinoLed_1 - Pinos 7 e 8
-    // pinoSensor_2 -> pinoLed_2 - Pinos 6 e 9
-    // pinoSensor_3 -> pinoLed_3 - Pinos A0 e 10
-    // pinoSensor_4 -> pinoLed_4 - Pinos A1 e 13
-    // pinoSensor_5 -> pinoLed_5 - Pinos A4 e A2
-    // pinoSensor_6 -> pinoLed_6 - Pinos A5 e A3
+    // pinoSensor_1 -> pinoLed_1 - Pinos A0 e 13
+    // pinoSensor_2 -> pinoLed_2 - Pinos A1 e 12
+    // pinoSensor_3 -> pinoLed_3 - Pinos A2 e 11
+    // pinoSensor_4 -> pinoLed_4 - Pinos A3 e 10
+    // pinoSensor_5 -> pinoLed_5 - Pinos A4 e 9
+    // pinoSensor_6 -> pinoLed_6 - Pinos A5 e 8
 
     // Variáveis
     int point = 0; //Contador de pontos
@@ -172,17 +175,23 @@ eletrônicos no Pinball.
 
     void loop() {
       //Sensor
-      if ((digitalRead(pinoSensor_1) == LOW) || (digitalRead(pinoSensor_5) == LOW)){ //Se a leitura do sensor 1 ou 5 (Verde) for igual a LOW, faz
-        digitalWrite(pinoLed_1, HIGH); //Acende o LED 1 - Verde
+      if (digitalRead(pinoSensor_1) == LOW){ //Se a leitura do sensor 1 (Azul) for igual a LOW, faz
+        digitalWrite(pinoLed_1, HIGH); //Acende o LED 1 - Azul
         point=point+1; //Adiciona 1 ponto
-      }else if((digitalRead(pinoSensor_2) == LOW) || (digitalRead(pinoSensor_6) == LOW)){ //Se a leitura do sensor 2 ou 6 (Azul) for igual a LOW, faz
-            digitalWrite(pinoLed_2, HIGH); //Acende o LED 2 - Azul
+      }else if(digitalRead(pinoSensor_2) == LOW){ //Se a leitura do sensor 2 (Verde)) for igual a LOW, faz
+        digitalWrite(pinoLed_2, HIGH); //Acende o LED 2 - Verde
         point=point+2; //Adiciona 2 ponto
       }else if(digitalRead(pinoSensor_3) == LOW){ //Se a leitura do sensor 3 (Amarelo) for igual a LOW, faz
-            digitalWrite(pinoLed_3, HIGH); //Acende o LED 3 - Amarelo
+        digitalWrite(pinoLed_3, HIGH); //Acende o LED 3 - Amarelo
         point=point+3; //Adiciona 3 ponto
+      }else if(digitalRead(pinoSensor_5) == LOW){ //Se a leitura do sensor 5 (Verde) for igual a LOW, faz
+        digitalWrite(pinoLed_5, HIGH); //Acende o LED 5 - Verde
+        point=point+2; //Adiciona 2 ponto
+      }else if(digitalRead(pinoSensor_6) == LOW){ //Se a leitura do sensor 6 (Azul) for igual a LOW, faz
+        digitalWrite(pinoLed_6, HIGH); //Acende o LED 6 - Azul
+        point=point+1; //Adiciona 1 ponto
       }else if(digitalRead(pinoSensor_4) == LOW){ //Se a leitura do sensor 4 (Vermelho) for igual a LOW, faz
-            digitalWrite(pinoLed_4, HIGH); //Acende o LED 4 - Vermelho
+        digitalWrite(pinoLed_4, HIGH); //Acende o LED 4 - Vermelho
         point=0; //Reinicia a contagem
       }
       
