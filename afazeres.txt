@@ -1,14 +1,13 @@
-ESCRITO EM 03/06/23
+ESCRITO EM 05/06/23
 ---
-PARA 04/06/23
+PARA 06/06/23
 ---
 Subir github:
 
 Estudar:
 	- Simulação com software Fritzing
-	
+
 Afazeres:
-	- Terminar Breadboard Fritzing
 	- Arrumar Esquemático Fritzing
 	- Readme.*
 		- Lista de materiais
