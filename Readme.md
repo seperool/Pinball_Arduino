@@ -5,9 +5,9 @@
 Desenvolver um brinquedo simples para crianças com transtorno de especto
 autista (TEA) que envolva circuitos elétricos.  
 O projeto é um pinball, de dimensões portatil (um pouco maior que uma
-caixa de sapatos), construido com **Arduino UNO R3**, seis **LED** e
-seis sensores que mapeiam a movimentação da bola. Com base no mapeamento
-da movimentação da bola os pontos do jogo são marcados ou a partida é
+caixa de sapatos), construido com *Arduino UNO R3*, seis *LEDs* e seis
+sensores que mapeiam a movimentação da bola. Com base no mapeamento da
+movimentação da bola os pontos do jogo são marcados ou a partida é
 reiniciada.  
 
 <figure>
@@ -98,7 +98,9 @@ eletrônicos no Pinball.
 ![Circuito do Arduino com seis sensores ópticos, seis *LEDs* e um
 *LCD*](./RMarkdown/Imagens/Pinball_Circuit.png)
 
-## 3.5 Montagem do projeto
+## 3.5 Esquemático
+
+## 3.6 Montagem do projeto
 
 # 4 CONCLUSÃO
 

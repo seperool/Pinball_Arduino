@@ -16,18 +16,18 @@ output:
   md_document:
     number_sections: true
     variant: markdown_github
-  odt_document: 
-    number_sections: true
-  html_document:
-    number_sections: true
-    df_print: paged
-  github_document: 
-  pdf_document: 
-    number_sections: true
-    toc: TRUE
   word_document: 
     toc: TRUE
     number_sections: true
+  odt_document: 
+    number_sections: true
+  github_document: 
+  html_document:
+    number_sections: true
+    df_print: paged
+  pdf_document: 
+    number_sections: true
+    toc: TRUE
 header-includes:
   - \pagenumbering{roman} #adiciona letras romanas minusculas ao cabeçalho
   - \renewcommand{\listfigurename}{LISTA DE FIGURAS} #nome lista de figuras
@@ -49,7 +49,7 @@ library(knitr)
 ## Projeto Pinball
 
 Desenvolver um brinquedo simples para crianças com transtorno de especto autista (TEA) que envolva circuitos elétricos.\
-O projeto é um pinball, de dimensões portatil (um pouco maior que uma caixa de sapatos), construido com **Arduino UNO R3**, seis **LED** e seis sensores que mapeiam a movimentação da bola. Com base no mapeamento da movimentação da bola os pontos do jogo são marcados ou a partida é reiniciada.\
+O projeto é um pinball, de dimensões portatil (um pouco maior que uma caixa de sapatos), construido com *Arduino UNO R3*, seis *LEDs* e seis sensores que mapeiam a movimentação da bola. Com base no mapeamento da movimentação da bola os pontos do jogo são marcados ou a partida é reiniciada.\
 
 ![Exemplo pinball construido a partir de Arduino](RMarkdown/Imagens/Imagem_pinball_arduino.png){ width=30% }
 
@@ -122,6 +122,8 @@ Foi projetado a estrutura do pinball e com base nas medidas foi possível mensur
 ## Circuito do Arduino
 
 ![Circuito do Arduino com seis sensores ópticos, seis *LEDs* e um *LCD*](./RMarkdown/Imagens/Pinball_Circuit.png){}
+
+## Esquemático
 
 \newpage
 
