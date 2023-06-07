@@ -1,6 +1,6 @@
-ESCRITO EM 05/06/23
+ESCRITO EM 07/06/23
 ---
-PARA 06/06/23
+PARA 08/06/23
 ---
 Subir github:
 
@@ -14,13 +14,8 @@ Afazeres:
 			- Parte mecânica
 		- Orçamento projeto
 			- Parte Mecânica
-			- Parte Eletrônica
-			- Sites de venda
-			- Preços
 		- Desenvolvimento
 			- Desenho projeto
-			- Justificar bateria
-			- Breadboard
 			- Esquemático
 	- Teste Programação/Circuito
 		- Tempo de delay
