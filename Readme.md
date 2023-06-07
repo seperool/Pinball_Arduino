@@ -46,7 +46,7 @@ Hochenbaum (2013)
 | Sensor Óptico Reflexivo TCRT5000               |     6      |
 | Cabos Jumper macho-macho                       |     1      |
 | Tubo Termo Retrátil                            |     1      |
-| Protoboard                                     |     1      |
+| Protoboard                                     |     2      |
 | Suporte Bateria 9V Plug P4                     |     1      |
 | Bateria Recarregável 9v De Litio 680mah Rontek |     1      |
 | Bolinha de Gude                                |     1      |
@@ -92,6 +92,18 @@ mensurar as distâncias de fios e a disposição dos dispositivos
 eletrônicos no Pinball.  
 
 ## 3.3 Bateria
+
+Sobre a escolha da bateria, o tipo de bateria que ofereceria um melhor
+desempenho para o projeto funcionar por varias horas e ainda sendo
+recarregavel é o modelo *Bateria Recarregável 9v De Litio 680mah Rontek*
+pelo preço de aproximadamente R$
+[135.00](https://www.magazineluiza.com.br/bateria-recarregavel-9v-de-litio-680mah-rontek/p/jgfeg3d9a7/ea/rapo/),
+apresentando assim um alto custo. Foi escolhido para baratear o projeto
+a *bateria duracell alcalina 9v*, sendo esta mais usual, com bom
+desempenho, apesar de não ser recarregavele e ter por volta de 3 a 4
+horas de vida utíl com o Pinball em funcionamento, pelo preço de
+aproximadamente R$ 25,00. Esta última serve aos propositos do projeto
+para demonstração.  
 
 ## 3.4 Circuito do Arduino
 

@@ -16,18 +16,18 @@ output:
   md_document:
     number_sections: true
     variant: markdown_github
-  word_document: 
-    toc: TRUE
-    number_sections: true
-  odt_document: 
-    number_sections: true
-  github_document: 
   html_document:
     number_sections: true
     df_print: paged
   pdf_document: 
     number_sections: true
     toc: TRUE
+  github_document: 
+  word_document: 
+    toc: TRUE
+    number_sections: true
+  odt_document: 
+    number_sections: true
 header-includes:
   - \pagenumbering{roman} #adiciona letras romanas minusculas ao cabeçalho
   - \renewcommand{\listfigurename}{LISTA DE FIGURAS} #nome lista de figuras
@@ -82,7 +82,7 @@ materiais <- c("Arduino UNO R3",
                   "Bateria Recarregável 9v De Litio 680mah Rontek",
                   "Bolinha de Gude"
                   )
-QDT <- c(1,1,1,1,2,2,6,6,6,1,1,6,1,1,1,1,1,1)
+QDT <- c(1,1,1,1,2,2,6,6,6,1,1,6,1,1,2,1,1,1)
 tbl_mat <- data.frame(materiais,QDT)
 
 #Tabela
@@ -116,6 +116,8 @@ Os principais fatores considerados foram:\
 Foi projetado a estrutura do pinball e com base nas medidas foi possível mensurar as distâncias de fios e a disposição dos dispositivos eletrônicos no Pinball.\
 
 ## Bateria
+
+Sobre a escolha da bateria, o tipo de bateria que ofereceria um melhor desempenho para o projeto funcionar por varias horas e ainda sendo recarregavel é o modelo *Bateria Recarregável 9v De Litio 680mah Rontek* pelo preço de aproximadamente R$ [135.00](https://www.magazineluiza.com.br/bateria-recarregavel-9v-de-litio-680mah-rontek/p/jgfeg3d9a7/ea/rapo/), apresentando assim um alto custo. Foi escolhido para baratear o projeto a *bateria duracell alcalina 9v*, sendo esta mais usual, com bom desempenho, apesar de não ser recarregavele e ter por volta de 3 a 4 horas de vida utíl com o Pinball em funcionamento, pelo preço de aproximadamente R\$ 25,00. Esta última serve aos propositos do projeto para demonstração.\
 
 \newpage
 
