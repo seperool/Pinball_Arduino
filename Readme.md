@@ -102,17 +102,27 @@ apresentando assim um alto custo. Foi escolhido para baratear o projeto
 a *bateria duracell alcalina 9v*, sendo esta mais usual, com bom
 desempenho, apesar de não ser recarregavele e ter por volta de 3 a 4
 horas de vida utíl com o Pinball em funcionamento, pelo preço de
-aproximadamente R$ 25,00. Esta última serve aos propositos do projeto
-para demonstração.  
+aproximadamente R$
+[25,00](https://www.magazineluiza.com.br/bateria-duracell-alcalina-9v-preto-e-laranja-9v-1/p/dc3hca11h7/cj/batr/).
+Esta última serve aos propositos do projeto para demonstração.  
 
-## 3.4 Circuito do Arduino
+## 3.4 Circuito
+
+Para os desenhos do circuito foi utilizado o software tipo *CAD*
+[Fritzing](https://fritzing.org/), de codigo aberto, na versão beta. O
+software oferece a possibilidade de desenhar tanto o modelo *breadboard*
+quando o esquemático do circuito com arduino, sendo suas vantagens uma
+biblioteca de dispositivos eletrônicos vasta, uma comunidade ativa para
+tirar dúvidas e a criação de novos dispositivos eletrônicos.  
+
+### 3.4.1 Breadboard
 
 ![Circuito do Arduino com seis sensores ópticos, seis *LEDs* e um
 *LCD*](./RMarkdown/Imagens/Pinball_Circuit.png)
 
-## 3.5 Esquemático
+### 3.4.2 Esquemático
 
-## 3.6 Montagem do projeto
+## 3.5 Montagem do projeto
 
 # 4 CONCLUSÃO
 
