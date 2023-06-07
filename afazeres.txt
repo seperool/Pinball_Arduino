@@ -9,14 +9,15 @@ Estudar:
 
 Afazeres:
 	- Arrumar Esquemático Fritzing
+	- Orçamento projeto
+			- Parte Mecânica
 	- Readme.*
 		- Lista de materiais
 			- Parte mecânica
-		- Orçamento projeto
-			- Parte Mecânica
 		- Desenvolvimento
-			- Desenho projeto
-			- Esquemático
+			- Circuito
+				- Esquemático
+		- Montagem
 	- Teste Programação/Circuito
 		- Tempo de delay
 		- if-else
