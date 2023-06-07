@@ -13,21 +13,21 @@ lof: true
 lot: true
 toc-title: SUMÁRIO
 output:
+  md_document:
+    number_sections: true
+    variant: markdown_github
   odt_document: 
+    number_sections: true
+  pdf_document: 
+    number_sections: true
+    toc: TRUE
+  github_document: 
+  word_document: 
+    toc: TRUE
     number_sections: true
   html_document:
     number_sections: true
     df_print: paged
-  md_document:
-    number_sections: true
-    variant: markdown_github
-  github_document: 
-  pdf_document: 
-    number_sections: true
-    toc: TRUE
-  word_document: 
-    toc: TRUE
-    number_sections: true
 header-includes:
   - \pagenumbering{roman} #adiciona letras romanas minusculas ao cabeçalho
   - \renewcommand{\listfigurename}{LISTA DE FIGURAS} #nome lista de figuras
@@ -55,7 +55,7 @@ library(knitr)
 materiais_mec <- c("")
 qtd_met_mec <- c("")
 preco_unit_met_mec <- c("")
-valor_total_mec <- c("")
+valor_total_mec <- c("") #qtd_met_mec*preco_unit_met_mec
 orc_mec <- data.frame(materiais_mec,qtd_met_mec,preco_unit_met_mec,valor_total_mec)
 
 #Tabela
@@ -69,10 +69,26 @@ kable(orc_mec,
 
 ```{r Orcamento_disp_eletronicos, echo=FALSE, message=FALSE, warning=FALSE}
 #data.frame
-materiais_elet <- c("")
-qtd_met_ele <- c("")
-preco_unit_met_ele <- c("")
-valor_total_disp <- c("")
+materiais_elet <- c("Arduino UNO R3",
+                  "Case para Arduino UNO",
+                  "LED Difuso 5mm Vermelho",
+                  "LED Difuso 5mm Amarelo",
+                  "LED Difuso 5mm Azul",
+                  "LED Difuso 5mm Verde",
+                  "Resistor de 330 Ohm",
+                  "Resistor de 150 Ohm",
+                  "Resistor de 10k Ohm",
+                  "Potenciometro 10k",
+                  "Display LCD 16×2 Backlight Verde",
+                  "Sensor Óptico Reflexivo TCRT5000",
+                  "Cabos Jumper macho-macho",
+                  "Kit Tubo Termo Retrátil 5 Cores",
+                  "Protoboard",
+                  "Suporte Bateria 9V Plug P4",
+                  "bateria duracell alcalina 9v")
+qtd_met_ele <- c(1,1,1,1,2,2,6,6,6,1,1,6,1,1,2,1,1)
+preco_unit_met_ele <- c(90.15,18.90,0.23,0.23,0.47,0.47,0.18,0.18,0.05,2.28,20.80,1.21,9.40,32.10,16.05,13.20,24.50)
+valor_total_disp <- qtd_met_ele*preco_unit_met_ele
 orc_disp_ele <- data.frame(materiais_elet,qtd_met_ele,preco_unit_met_ele,valor_total_disp)
 
 #Tabela
@@ -97,8 +113,8 @@ kable(orc_disp_ele,
 \newpage
 
 # RESUMO
-
-## Comparando Preços
+- O preço orçado total dos materiais da parte mecânica (estrutura e mecanismos) dá em torno de R\$ `r sum()`.\
+- O preço orçado total dos dispositivos eletônicos dá em torno de R\$ `r sum(valor_total_disp)`.\
 
 \newpage
 
