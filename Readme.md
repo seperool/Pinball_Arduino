@@ -85,13 +85,7 @@ circuito eletrônico.
     objeto.  
 -   Definir e testar o sistema de pontuação do jogo.  
 
-## 3.2 Desenho do pinball
-
-Foi projetado a estrutura do pinball e com base nas medidas foi possível
-mensurar as distâncias de fios e a disposição dos dispositivos
-eletrônicos no Pinball.  
-
-## 3.3 Bateria
+## 3.2 Bateria
 
 Sobre a escolha da bateria, o tipo de bateria que ofereceria um melhor
 desempenho para o projeto funcionar por varias horas e ainda sendo
@@ -106,7 +100,9 @@ aproximadamente R$
 [25,00](https://www.magazineluiza.com.br/bateria-duracell-alcalina-9v-preto-e-laranja-9v-1/p/dc3hca11h7/cj/batr/).
 Esta última serve aos propositos do projeto para demonstração.  
 
-## 3.4 Circuito
+## 3.3 Circuito
+
+### 3.3.1 *Software* de desenho do circuito
 
 Para os desenhos do circuito foi utilizado o software tipo *CAD*
 [Fritzing](https://fritzing.org/), de codigo aberto, na versão beta. O
@@ -115,18 +111,22 @@ quando o esquemático do circuito com arduino, sendo suas vantagens uma
 biblioteca de dispositivos eletrônicos vasta, uma comunidade ativa para
 tirar dúvidas e a criação de novos dispositivos eletrônicos.  
 
-### 3.4.1 Breadboard
+### 3.3.2 Breadboard
 
 ![Circuito do Arduino com seis sensores ópticos, seis *LEDs* e um
 *LCD*](./RMarkdown/Imagens/Pinball_Circuit.png)
 
-### 3.4.2 Esquemático
+### 3.3.3 Esquemático
 
-## 3.5 Montagem do projeto
+# 4 MONTAGEM DO PINBALL
 
-# 4 CONCLUSÃO
+Foi projetado a estrutura do pinball e com base nas medidas foi possível
+mensurar as distâncias de fios e a disposição dos dispositivos
+eletrônicos no Pinball.  
 
-# 5 APÊNDICE A - PROGRAMAÇÃO
+# 5 CONCLUSÃO
+
+# 6 APÊNDICE A - PROGRAMAÇÃO
 
     //Bibliotecas
     #include <LiquidCrystal.h>
@@ -241,7 +241,7 @@ tirar dúvidas e a criação de novos dispositivos eletrônicos.
       digitalWrite(pinoLed_6, LOW); //Apaga o LED 6
     }
 
-# 6 BIBLIOGRAFIA
+# 7 BIBLIOGRAFIA
 
 EVANS, M.; NOBLE, J.; HOCHENBAUM, J. **[Arduino em
 Ação](https://books.google.com.br/books?id=tig0CgAAQBAJ)**. \[s.l.\]
