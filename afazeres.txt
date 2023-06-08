@@ -1,11 +1,10 @@
-ESCRITO EM 07/06/23
+ESCRITO EM 08/06/23
 ---
-PARA 08/06/23
+PARA 09/06/23
 ---
 Subir github:
 
 Estudar:
-	- Simulação com software Fritzing
 
 Afazeres:
 	- Arrumar Esquemático Fritzing
@@ -14,9 +13,6 @@ Afazeres:
 	- Readme.*
 		- Lista de materiais
 			- Parte mecânica
-		- Desenvolvimento
-			- Circuito
-				- Esquemático
 		- Montagem
 	- Teste Programação/Circuito
 		- Tempo de delay
