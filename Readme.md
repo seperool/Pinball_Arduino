@@ -69,9 +69,13 @@ tirar dúvidas e a criação de novos dispositivos eletrônicos.
 ### 3.1.2 Breadboard
 
 ![Circuito do Arduino com seis sensores ópticos, seis *LEDs* e um
-*LCD*](./RMarkdown/Imagens/Pinball_Circuit.png)
+*LCD*](./RMarkdown/Imagens/pinball_bb.png)
 
-### 3.1.3 Esquemático
+### 3.1.3 Diagrama esquemático
+
+![Diagrama Esquemático do circuito do Arduino com seis sensores ópticos,
+seis *LEDs* e um
+*LCD*](./RMarkdown/Imagens/pinball_Esquematico_colorido.png)
 
 ## 3.2 Testes
 
