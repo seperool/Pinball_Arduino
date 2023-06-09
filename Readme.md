@@ -60,7 +60,7 @@ Lista de materiais
 ### 3.1.1 *Software* de desenho do circuito
 
 Para os desenhos do circuito foi utilizado o software tipo *CAD*
-[Fritzing](https://fritzing.org/), de codigo aberto, na versão beta. O
+[*Fritzing*](https://fritzing.org/), de codigo aberto, na versão beta. O
 software oferece a possibilidade de desenhar tanto o modelo *breadboard*
 quando o esquemático do circuito com arduino, sendo suas vantagens uma
 biblioteca de dispositivos eletrônicos vasta, uma comunidade ativa para
@@ -68,14 +68,22 @@ tirar dúvidas e a criação de novos dispositivos eletrônicos.
 
 ### 3.1.2 Breadboard
 
-![Circuito do Arduino com seis sensores ópticos, seis *LEDs* e um
-*LCD*](./RMarkdown/Imagens/pinball_bb.png)
+<figure>
+<img src="./RMarkdown/Imagens/pinball_bb.png"
+alt="Circuito do Arduino com seis sensores ópticos, seis LEDs e um LCD" />
+<figcaption aria-hidden="true">Circuito do Arduino com seis sensores
+ópticos, seis <em>LEDs</em> e um <em>LCD</em></figcaption>
+</figure>
 
 ### 3.1.3 Diagrama esquemático
 
-![Diagrama Esquemático do circuito do Arduino com seis sensores ópticos,
-seis *LEDs* e um
-*LCD*](./RMarkdown/Imagens/pinball_Esquematico_colorido.png)
+<figure>
+<img src="./RMarkdown/Imagens/pinball_Esquematico_colorido.png"
+alt="Diagrama Esquemático do circuito do Arduino com seis sensores ópticos, seis LEDs e um LCD" />
+<figcaption aria-hidden="true">Diagrama Esquemático do circuito do
+Arduino com seis sensores ópticos, seis <em>LEDs</em> e um
+<em>LCD</em></figcaption>
+</figure>
 
 ## 3.2 Testes
 
@@ -113,7 +121,7 @@ Sobre a escolha da bateria, o tipo de bateria que ofereceria um melhor
 desempenho para o projeto funcionar por varias horas e ainda sendo
 recarregavel é o modelo *Bateria Recarregável 9v De Litio 680mah Rontek*
 pelo preço de aproximadamente R$
-[135.00](https://www.magazineluiza.com.br/bateria-recarregavel-9v-de-litio-680mah-rontek/p/jgfeg3d9a7/ea/rapo/),
+[135,00](https://www.magazineluiza.com.br/bateria-recarregavel-9v-de-litio-680mah-rontek/p/jgfeg3d9a7/ea/rapo/),
 apresentando assim um alto custo. Foi escolhido para baratear o projeto
 a *bateria duracell alcalina 9v*, sendo esta mais usual, com bom
 desempenho, apesar de não ser recarregavele e ter por volta de 3 a 4
