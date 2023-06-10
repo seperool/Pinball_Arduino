@@ -7,8 +7,9 @@ autista (TEA) que envolva circuitos elétricos.
 O projeto é um pinball, de dimensões portatil (um pouco maior que uma
 caixa de sapatos), construido com *Arduino UNO R3*, seis *LEDs* e seis
 sensores que mapeiam a movimentação da bola. Com base no mapeamento da
-movimentação da bola os pontos do jogo são marcados ou a partida é
-reiniciada.  
+movimentação da bola de gude, em pontos predeterminados, os pontos do
+jogo são marcados e contados, ou a partida é reiniciada e os pontos são
+zerados.  
 
 <figure>
 <img src="RMarkdown/Imagens/Imagem_pinball_arduino.png"
@@ -22,7 +23,7 @@ Arduino</figcaption>
 
 O Arduino é uma pequena placa de microcontrolador. Contém diversos
 terminais que permitem a conexão com dispositivos externos. Os Arduinos
-podem ser energizados por um computador através de um plugue USB, por
+podem ser energizados por um computador através de um plugue *USB*, por
 uma bateria 9V ou por uma fonte de alimentação. Eles podem ser
 programados pelo computador e, em seguida, desconectados, permitindo
 assim que trabalhem independentemente do computador.Evans, Noble e
@@ -132,9 +133,15 @@ Esta última serve aos propositos do projeto para demonstração.
 
 # 4 MONTAGEM DO PINBALL
 
-Foi projetado a estrutura do pinball e com base nas medidas foi possível
-mensurar as distâncias de fios e a disposição dos dispositivos
-eletrônicos no Pinball.  
+Processo de montagem:  
+
+-   Com base nas medidas da estrutura do pinball foi possivel determinar
+    a metragem de fios.  
+-   Na estrutura do pinball foram feitas aberturas para o encaixe dos
+    dispostivos eletrônicos.  
+-   Os sensores, Arduino e placa de *LCD* foram presos a estrutura do
+    pinball por cola quente.  
+-   Os fios e dispositivos eletrônicos foram soldados uns aos outros.  
 
 # 5 CONCLUSÃO
 

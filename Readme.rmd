@@ -9,39 +9,58 @@ date: "`r format(Sys.time(), '%d %B %Y')`"
 committee:
   name: Paulo
   position: Orientador acadêmico
-lof: true
-lot: true
-toc-title: SUMÁRIO
+##lof: true
+##lot: true
+##toc-title: SUMÁRIO
 output:
-  md_document:
-    number_sections: true
-    variant: markdown_github
   html_document:
     number_sections: true
     df_print: paged
-  pdf_document: 
-    number_sections: true
-    toc: TRUE
-  github_document: 
-  odt_document: 
-    number_sections: true
   word_document: 
     toc: TRUE
     number_sections: true
+  pdf_document: 
+    number_sections: true
+    toc: FALSE
+  github_document: 
+  md_document:
+    number_sections: true
+    variant: markdown_github
+  odt_document: 
+    number_sections: true
 header-includes:
   - \pagenumbering{roman} #adiciona letras romanas minusculas ao cabeçalho
-  - \renewcommand{\listfigurename}{LISTA DE FIGURAS} #nome lista de figuras
-  - \renewcommand{\listtablename}{LISTA DE TABELAS} #nome lista de tabelas
 bibliography: RMarkdown/Bibliografia_arduino.bib
 csl: RMarkdown/abnt.csl
 ---
+\newpage
 
+```{=latex}
+\setcounter{tocdepth}{4}
+\renewcommand{\contentsname}{SUMÁRIO}
+\tableofcontents
+```
+
+\newpage
+
+```{=latex}
+\setcounter{tocdepth}{4}
+\renewcommand{\listfigurename}{LISTA DE FIGURAS}
+\listoffigures
+```
+
+\newpage
+
+```{=latex}
+\setcounter{tocdepth}{4}
+\renewcommand{\listtablename}{LISTA DE TABELAS}
+\listoftables
+```
 
 ```{r Pacotes, echo=FALSE, message=FALSE, warning=FALSE}
 library(knitr)
 
 ```
-
 
 \newpage
 
@@ -49,12 +68,14 @@ library(knitr)
 ## Projeto Pinball
 
 Desenvolver um brinquedo simples para crianças com transtorno de especto autista (TEA) que envolva circuitos elétricos.\
-O projeto é um pinball, de dimensões portatil (um pouco maior que uma caixa de sapatos), construido com *Arduino UNO R3*, seis *LEDs* e seis sensores que mapeiam a movimentação da bola. Com base no mapeamento da movimentação da bola os pontos do jogo são marcados ou a partida é reiniciada.\
+O projeto é um pinball, de dimensões portatil (um pouco maior que uma caixa de sapatos), construido com *Arduino UNO R3*, seis *LEDs* e seis sensores que mapeiam a movimentação da bola. Com base no mapeamento da movimentação da bola de gude, em pontos predeterminados, os pontos do jogo são marcados e contados, ou a partida é reiniciada e os pontos são zerados.\
+
 
 ![Exemplo pinball construido a partir de Arduino](RMarkdown/Imagens/Imagem_pinball_arduino.png){ width=30% }
 
+
 ## O que é o Arduino
-O Arduino é uma pequena placa de microcontrolador. Contém diversos terminais que permitem a conexão com dispositivos externos. Os Arduinos podem ser energizados por um computador através de um plugue USB, por uma bateria 9V ou por uma fonte de alimentação. Eles podem ser programados pelo computador e, em seguida, desconectados, permitindo assim que trabalhem independentemente do computador.[@monk2013programaccao, @monk2015programaccao,@evans2013arduino]\
+O Arduino é uma pequena placa de microcontrolador. Contém diversos terminais que permitem a conexão com dispositivos externos. Os Arduinos podem ser energizados por um computador através de um plugue *USB*, por uma bateria 9V ou por uma fonte de alimentação. Eles podem ser programados pelo computador e, em seguida, desconectados, permitindo assim que trabalhem independentemente do computador.[@monk2013programaccao, @monk2015programaccao,@evans2013arduino]\
 
 \pagenumbering{arabic} 
 \newpage
@@ -137,7 +158,12 @@ Sobre a escolha da bateria, o tipo de bateria que ofereceria um melhor desempenh
 
 # MONTAGEM DO PINBALL
 
-Foi projetado a estrutura do pinball e com base nas medidas foi possível mensurar as distâncias de fios e a disposição dos dispositivos eletrônicos no Pinball.\
+Processo de montagem:\
+
+- Com base nas medidas da estrutura do pinball foi possivel determinar a metragem de fios.\
+- Na estrutura do pinball foram feitas aberturas para o encaixe dos dispostivos eletrônicos.\
+- Os sensores, Arduino e placa de *LCD* foram presos a estrutura do pinball por cola quente.\
+- Os fios e dispositivos eletrônicos foram soldados uns aos outros.\
 
 \newpage
 
