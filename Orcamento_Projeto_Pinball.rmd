@@ -9,46 +9,75 @@ date: "`r format(Sys.time(), '%d %B %Y')`"
 committee:
   name: Paulo
   position: Orientador acadêmico
-lof: true
-lot: true
-toc-title: SUMÁRIO
+#lof: true
+#lot: true
+#toc-title: SUMÁRIO
 output:
   md_document:
     number_sections: true
     variant: markdown_github
-  odt_document: 
-    number_sections: true
   pdf_document: 
     number_sections: true
-    toc: TRUE
-  github_document: 
-  word_document: 
-    toc: TRUE
+    toc: false
+  odt_document: 
     number_sections: true
+  github_document: 
   html_document:
     number_sections: true
     df_print: paged
+  word_document: 
+    toc: TRUE
+    number_sections: true
 header-includes:
   - \pagenumbering{roman} #adiciona letras romanas minusculas ao cabeçalho
-  - \renewcommand{\listfigurename}{LISTA DE FIGURAS} #nome lista de figuras
-  - \renewcommand{\listtablename}{LISTA DE TABELAS} #nome lista de tabelas
 bibliography: RMarkdown/Bibliografia_arduino.bib
 csl: RMarkdown/abnt.csl
 ---
 
 \newpage
 
-```{r Pacotes, echo=FALSE, message=FALSE, warning=FALSE}
-library(knitr)
+```{=latex}
+\setcounter{tocdepth}{4}
+\renewcommand{\contentsname}{SUMÁRIO}
+\tableofcontents
 ```
 
+\newpage
+
+```{=latex}
+\setcounter{tocdepth}{4}
+\renewcommand{\listfigurename}{LISTA DE FIGURAS}
+\listoffigures
+```
+
+\newpage
+
+```{=latex}
+\setcounter{tocdepth}{4}
+\renewcommand{\listtablename}{LISTA DE TABELAS}
+\listoftables
+```
+
+```{r Pacotes, echo=FALSE, message=FALSE, warning=FALSE}
+library(knitr)
+
+```
+
+\newpage
+
 # PROJETO PINBALL
+Desenvolver um brinquedo simples para crianças com transtorno de especto autista (TEA) que envolva circuitos elétricos.\
+O projeto é um pinball, de dimensões portatil (um pouco maior que uma caixa de sapatos), construido com *Arduino UNO R3*, seis *LEDs* e seis sensores que mapeiam a movimentação da bola. Com base no mapeamento da movimentação da bola de gude, em pontos predeterminados, os pontos do jogo são marcados e contados, ou a partida é reiniciada e os pontos são zerados.\
+
+
+![Exemplo pinball construido a partir de Arduino](RMarkdown/Imagens/Imagem_pinball_arduino.png){ width=30% }
+
 
 \pagenumbering{arabic} 
 \newpage
 
 # ORÇAMENTOS
-## Orçamento Mecânico
+## Orçamento da parte mecânica
 
 ```{r Orcamento_peças_mecânica, echo=FALSE, message=FALSE, warning=FALSE}
 #data.frame
@@ -65,7 +94,9 @@ kable(orc_mec,
       caption = "Orçamento dos peças mecânicas")
 ```
 
-## Orçamento Dispositivos Eletrônicos
+\newpage
+
+## Orçamento dos dispositivos eletrônicos
 
 ```{r Orcamento_disp_eletronicos, echo=FALSE, message=FALSE, warning=FALSE}
 #data.frame
@@ -115,6 +146,7 @@ kable(orc_disp_ele,
 # RESUMO
 - O preço orçado total dos materiais da parte mecânica (estrutura e mecanismos) dá em torno de R\$ `r sum()`.\
 - O preço orçado total dos dispositivos eletônicos dá em torno de R\$ `r sum(valor_total_disp)`.\
+- Valor total do projeto R$ `r sum(valor_total_disp)+sum()`.\
 
 \newpage
 
