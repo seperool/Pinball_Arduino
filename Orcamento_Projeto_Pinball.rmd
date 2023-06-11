@@ -16,18 +16,18 @@ output:
   md_document:
     number_sections: true
     variant: markdown_github
+  odt_document: 
+    number_sections: true
   pdf_document: 
     number_sections: true
     toc: false
-  odt_document: 
-    number_sections: true
   github_document: 
-  html_document:
-    number_sections: true
-    df_print: paged
   word_document: 
     toc: TRUE
     number_sections: true
+  html_document:
+    number_sections: true
+    df_print: paged
 header-includes:
   - \pagenumbering{roman} #adiciona letras romanas minusculas ao cabeçalho
 bibliography: RMarkdown/Bibliografia_arduino.bib
