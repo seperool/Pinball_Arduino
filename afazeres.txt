@@ -1,20 +1,24 @@
-ESCRITO EM 11/06/23
+ESCRITO EM 12/06/23
 ---
-PARA 12/06/23
+PARA 13/06/23
 ---
 Subir github:
 
 Estudar:
 
 Afazeres:
-	- Arrumar Esquemático Fritzing
 	- Orçamento projeto
 			- Parte Mecânica
 	- Readme.*
+		- Objetivo
+			- Citações
 		- Lista de materiais
 			- Parte mecânica
 		- Montagem
 	- Teste Programação/Circuito
 		- Tempo de delay
-		- if-else
-		- Transformação de pinos analogicos em digitais
+	- Pedir
+		- Planta da estrutura do Pinball
+		- Materiais da parte mecânica
+		- Quantidade dos materiais da parte mecânica
+		- Fotos do processo de montagem
