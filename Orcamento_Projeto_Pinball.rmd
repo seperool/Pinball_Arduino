@@ -16,25 +16,26 @@ output:
   md_document:
     number_sections: true
     variant: markdown_github
-  odt_document: 
-    number_sections: true
-  pdf_document: 
-    number_sections: true
-    toc: false
-  github_document: 
   word_document: 
     toc: TRUE
     number_sections: true
   html_document:
     number_sections: true
     df_print: paged
-header-includes:
-  - \pagenumbering{roman} #adiciona letras romanas minusculas ao cabeçalho
+  github_document: 
+  pdf_document: 
+    number_sections: true
+    toc: false
+  odt_document: 
+    number_sections: true
 bibliography: RMarkdown/Bibliografia_arduino.bib
 csl: RMarkdown/abnt.csl
 ---
 
+\thispagestyle{empty}
+
 \newpage
+\pagenumbering{roman}
 
 ```{=latex}
 \setcounter{tocdepth}{4}
