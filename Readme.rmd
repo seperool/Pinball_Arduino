@@ -16,18 +16,18 @@ output:
   md_document:
     number_sections: true
     variant: markdown_github
-  pdf_document: 
+  odt_document: 
     number_sections: true
-    toc: FALSE
   html_document:
     number_sections: true
     df_print: paged
   github_document: 
-  odt_document: 
-    number_sections: true
   word_document: 
     toc: TRUE
     number_sections: true
+  pdf_document: 
+    number_sections: true
+    toc: FALSE
 bibliography: RMarkdown/Bibliografia_arduino.bib
 csl: RMarkdown/abnt.csl
 ---
@@ -71,16 +71,25 @@ library(knitr)
 ## Projeto Pinball
 
 Desenvolver um brinquedo simples para crianças com transtorno de especto autista (TEA) que envolva circuitos elétricos.\
-O projeto é um pinball, de dimensões portatil (um pouco maior que uma caixa de sapatos), construido com *Arduino UNO R3*, seis *LEDs* e seis sensores que mapeiam a movimentação da bola. Com base no mapeamento da movimentação da bola de gude, em pontos predeterminados, os pontos do jogo são marcados e contados, ou a partida é reiniciada e os pontos são zerados.\
+O projeto é um pinball, de dimensões portatil (um pouco maior que uma caixa de sapatos), construido com *Arduino UNO R3*, seis *LEDs* e seis sensores que mapeiam a movimentação da bola. Com base no mapeamento da movimentação da bola de gude, em pontos predeterminados, os pontos do jogo são marcados e contados, ou a partida é reiniciada e os pontos são zerados. Como pode ser observado um exemplo desse modelo de pinball na figura \ref{pinball_ex}.\
 
 
-![Exemplo pinball construido a partir de Arduino](RMarkdown/Imagens/Imagem_pinball_arduino.png){ width=30% }
+![Exemplo pinball construido a partir de Arduino \label{pinball_ex}](RMarkdown/Imagens/Imagem_pinball_arduino.png){ width=30% }
 
 
-## O que é o Arduino
-O Arduino é uma pequena placa de microcontrolador. Contém diversos terminais que permitem a conexão com dispositivos externos. Os Arduinos podem ser energizados por um computador através de um plugue *USB*, por uma bateria 9V ou por uma fonte de alimentação. Eles podem ser programados pelo computador e, em seguida, desconectados, permitindo assim que trabalhem independentemente do computador.[@monk2013programaccao, @monk2015programaccao,@evans2013arduino]\
+\pagenumbering{arabic}
+\newpage
 
-\pagenumbering{arabic} 
+## O que é o *Arduino*
+O *Arduino* é uma pequena placa de microcontrolador. Contém diversos terminais que permitem a conexão com dispositivos externos. Os Arduinos podem ser energizados por um computador através de um plugue *USB*, por uma bateria 9V ou por uma fonte de alimentação. Eles podem ser programados pelo computador e, em seguida, desconectados, permitindo assim que trabalhem independentemente do computador.[@monk2013programaccao]\
+
+A principal razão da necessidade de um computador é poder baixar programas para a placa de *Arduino*. Uma vez instalados nela, esses programas podem ser executados de forma independente.[@monk2015programaccao]\
+
+A escolha da placa do *Arduino UNO R3*, entre as outras placas de Arduino, se dá por possuir um *layout* que fornece todas as entradas e saidas necessarias para o projeto, seu baixo custo e facilidade obtenção, como pode ser observado pela figura \ref{layout}. [@evans2013arduino]\
+
+![*Layout* da Placa do *Arduino UNO*. \label{layout}](./RMarkdown/Imagens/Layout_Arduino_Uno.png){width=50%}
+
+
 \newpage
 
 # LISTA DE MATERIAIS

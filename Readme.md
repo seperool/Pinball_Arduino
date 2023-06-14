@@ -9,25 +9,42 @@ caixa de sapatos), construido com *Arduino UNO R3*, seis *LEDs* e seis
 sensores que mapeiam a movimentação da bola. Com base no mapeamento da
 movimentação da bola de gude, em pontos predeterminados, os pontos do
 jogo são marcados e contados, ou a partida é reiniciada e os pontos são
-zerados.  
+zerados. Como pode ser observado um exemplo desse modelo de pinball na
+figura .  
 
 <figure>
 <img src="RMarkdown/Imagens/Imagem_pinball_arduino.png"
 style="width:30.0%"
-alt="Exemplo pinball construido a partir de Arduino" />
+alt="Exemplo pinball construido a partir de Arduino " />
 <figcaption aria-hidden="true">Exemplo pinball construido a partir de
-Arduino</figcaption>
+Arduino </figcaption>
 </figure>
 
-## 1.2 O que é o Arduino
+## 1.2 O que é o *Arduino*
 
-O Arduino é uma pequena placa de microcontrolador. Contém diversos
+O *Arduino* é uma pequena placa de microcontrolador. Contém diversos
 terminais que permitem a conexão com dispositivos externos. Os Arduinos
 podem ser energizados por um computador através de um plugue *USB*, por
 uma bateria 9V ou por uma fonte de alimentação. Eles podem ser
 programados pelo computador e, em seguida, desconectados, permitindo
-assim que trabalhem independentemente do computador.Evans, Noble e
-Hochenbaum (2013)  
+assim que trabalhem independentemente do computador.(Monk, 2013)  
+
+A principal razão da necessidade de um computador é poder baixar
+programas para a placa de *Arduino*. Uma vez instalados nela, esses
+programas podem ser executados de forma independente.(Monk, 2015)  
+
+A escolha da placa do *Arduino UNO R3*, entre as outras placas de
+Arduino, se dá por possuir um *layout* que fornece todas as entradas e
+saidas necessarias para o projeto, seu baixo custo e facilidade
+obtenção, como pode ser observado pela figura . (Evans, Noble e
+Hochenbaum, 2013)  
+
+<figure>
+<img src="./RMarkdown/Imagens/Layout_Arduino_Uno.png"
+style="width:50.0%" alt="Layout da Placa do Arduino UNO. " />
+<figcaption aria-hidden="true"><em>Layout</em> da Placa do <em>Arduino
+UNO</em>. </figcaption>
+</figure>
 
 # 2 LISTA DE MATERIAIS
 
