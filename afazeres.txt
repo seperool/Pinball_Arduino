@@ -1,6 +1,6 @@
-ESCRITO EM 12/06/23
+ESCRITO EM 15/06/23
 ---
-PARA 13/06/23
+PARA 16/06/23
 ---
 Subir github:
 
@@ -10,8 +10,6 @@ Afazeres:
 	- Orçamento projeto
 			- Parte Mecânica
 	- Readme.*
-		- Objetivo
-			- Citações
 		- Lista de materiais
 			- Parte mecânica
 		- Montagem
