@@ -13,21 +13,21 @@ committee:
 ##lot: true
 ##toc-title: SUMÁRIO
 output:
+  html_document:
+    number_sections: true
+    df_print: paged
   md_document:
     number_sections: true
     variant: markdown_github
   odt_document: 
     number_sections: true
-  html_document:
-    number_sections: true
-    df_print: paged
   github_document: 
-  word_document: 
-    toc: TRUE
-    number_sections: true
   pdf_document: 
     number_sections: true
     toc: FALSE
+  word_document: 
+    toc: TRUE
+    number_sections: true
 bibliography: RMarkdown/Bibliografia_arduino.bib
 csl: RMarkdown/abnt.csl
 ---
@@ -85,7 +85,7 @@ O *Arduino* é uma pequena placa de microcontrolador. Contém diversos terminais
 
 A principal razão da necessidade de um computador é poder baixar programas para a placa de *Arduino*. Uma vez instalados nela, esses programas podem ser executados de forma independente.[@monk2015programaccao]\
 
-A escolha da placa do *Arduino UNO R3*, entre as outras placas de Arduino, se dá por possuir um *layout* que fornece todas as entradas e saidas necessarias para o projeto, seu baixo custo e facilidade obtenção, como pode ser observado pela figura \ref{layout}. [@evans2013arduino]\
+A escolha da placa do *Arduino UNO R3*, entre as outras placas de Arduino, se dá por possuir um *layout* que fornece todas as entradas e saídas necessárias para o projeto, baixo custo e facilidade de obtenção (disponibilidade no mercado). O *layout* pode ser observado pela figura \ref{layout}. [@evans2013arduino]\
 
 ![*Layout* da Placa do *Arduino UNO*. \label{layout}](./RMarkdown/Imagens/Layout_Arduino_Uno.png){width=50%}
 
@@ -135,31 +135,32 @@ Para os desenhos do circuito foi utilizado o software tipo *CAD* [*Fritzing*](ht
 
 ### Breadboard
 
-![Circuito do Arduino com seis sensores ópticos, seis *LEDs* e um *LCD*](./RMarkdown/Imagens/pinball_bb.png){}
+![Circuito do Arduino com seis sensores ópticos, seis *LEDs* e um *LCD*. \label{circuito_bb}](./RMarkdown/Imagens/pinball_bb.png){}
 
 \newpage
 
 ### Diagrama esquemático
 
-![Diagrama Esquemático do circuito do Arduino com seis sensores ópticos, seis *LEDs* e um *LCD*](./RMarkdown/Imagens/pinball_Esquematico_colorido.png){}
+![Diagrama Esquemático do circuito do Arduino com seis sensores ópticos, seis *LEDs* e um *LCD*.](./RMarkdown/Imagens/pinball_Esquematico_colorido.png){}
 
 \newpage
 
 ## Testes
 
-Antes do projeto finalizado, foram feitos dois testes do prototipo do circuito eletrônico.\
+Antes do projeto finalizado, foram feitos dois testes do protótipo do circuito eletrônico.\
 
-1. O primeiro para averiguar como seria o circuito na sua forma mais simples, apenas um sensor óptico, um *LED* e uma placa de *LCD*, e a programação básica do Arduino para essa situação.\
+1. O primeiro para averiguar como seria o circuito na sua forma mais simples, apenas o *Arduino UNO*, um sensor óptico, um *LED* e uma placa de *LCD*, e a programação básica do Arduino para essa situação.\
 Os principais fatores considerados foram:\
 - A estrutura básica do circuito.\
 - O funcionamento do *LCD*.\
-- A programação base emplementada para unir esses componentes (sensor óptico, *LED* e placa de *LCD*).\
-2. O segundo experimento foi para ampliar o circuito, tornando mais proximo do real, seis sensores e seis *LEDs*, averiguar a programação como observada no Apêndice A com suas peculiaridades de:\
-- Definir os pinos de cada componente eletrônico.\
+- A programação básica implementada para unir esses componentes (sensor óptico, *LED* e placa de *LCD*).\
+2. O segundo experimento foi para ampliar o circuito, adicionando mais cinco sensores ópticos e mais cinco *LEDs* (Figura \ref{circuito_bb}):\
+- Averiguar a programação (como observada no Apêndice A).\
+- Definir os pinos de cada componente eletrônico em relação ao *Arduino UNO*.\
 - A disposição e o sistema de cores definido para os *LEDs*, relacionando os sensores e *LEDs*.\
-- Transformação de pinos analógicos para digitais no *Arduino* através de programação, para comportar todos os componentes.\
+- Transformação de pinos analógicos para digitais no *Arduino*, através de programação, para comportar todos os componentes.\
 - Testar da estrutura condicional (*if-else*) da programação.\
-- O tempo ideal de *delay* para reconhecimento dos sensores do objeto.\
+- O tempo ideal de *delay* para reconhecimento do objeto (bola de gude) pelos sensores.\
 - Definir e testar o sistema de pontuação do jogo.\
 
 ## Bateria
@@ -173,9 +174,21 @@ Sobre a escolha da bateria, o tipo de bateria que ofereceria um melhor desempenh
 Processo de montagem:\
 
 - Com base nas medidas da estrutura do pinball foi possivel determinar a metragem de fios.\
-- Na estrutura do pinball foram feitas aberturas para o encaixe dos dispostivos eletrônicos.\
-- Os sensores, Arduino e placa de *LCD* foram presos a estrutura do pinball por cola quente.\
-- Os fios e dispositivos eletrônicos foram soldados uns aos outros.\
+- Na estrutura do pinball foram feitas aberturas para o encaixe dos dispostivos eletrônicos. (figura \ref{placa_est})\
+
+![Placa da estrutura com furos para encaixe dos dispositivos. \label{placa_est}](./RMarkdown/Imagens/estrutura_aberturas.jpeg){width=30%}
+
+- Os sensores, Arduino e placa de *LCD* foram presos a estrutura do pinball por cola quente. (Figura \ref{montagem_disp})\
+
+
+![Montagem dos dispositivos eletrônicos na estrutura do pinball. \label{montagem_disp}](./RMarkdown/Imagens/montagem_bb.jpeg){width=30%}
+
+
+- Os fios e dispositivos eletrônicos foram soldados uns aos outros. (Figura \ref{fios})\
+
+
+![Fios soldados e presos na estrutura do pinball. \label{fios}](./RMarkdown/Imagens/montagem.jpeg){width=30%}
+
 
 \newpage
 

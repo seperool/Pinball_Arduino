@@ -35,9 +35,9 @@ programas podem ser executados de forma independente.(Monk, 2015)
 
 A escolha da placa do *Arduino UNO R3*, entre as outras placas de
 Arduino, se dá por possuir um *layout* que fornece todas as entradas e
-saidas necessarias para o projeto, seu baixo custo e facilidade
-obtenção, como pode ser observado pela figura . (Evans, Noble e
-Hochenbaum, 2013)  
+saídas necessárias para o projeto, baixo custo e facilidade de obtenção
+(disponibilidade no mercado). O *layout* pode ser observado pela figura
+. (Evans, Noble e Hochenbaum, 2013)  
 
 <figure>
 <img src="./RMarkdown/Imagens/Layout_Arduino_Uno.png"
@@ -88,49 +88,50 @@ tirar dúvidas e a criação de novos dispositivos eletrônicos.
 
 <figure>
 <img src="./RMarkdown/Imagens/pinball_bb.png"
-alt="Circuito do Arduino com seis sensores ópticos, seis LEDs e um LCD" />
+alt="Circuito do Arduino com seis sensores ópticos, seis LEDs e um LCD. " />
 <figcaption aria-hidden="true">Circuito do Arduino com seis sensores
-ópticos, seis <em>LEDs</em> e um <em>LCD</em></figcaption>
+ópticos, seis <em>LEDs</em> e um <em>LCD</em>. </figcaption>
 </figure>
 
 ### 3.1.3 Diagrama esquemático
 
 <figure>
 <img src="./RMarkdown/Imagens/pinball_Esquematico_colorido.png"
-alt="Diagrama Esquemático do circuito do Arduino com seis sensores ópticos, seis LEDs e um LCD" />
+alt="Diagrama Esquemático do circuito do Arduino com seis sensores ópticos, seis LEDs e um LCD." />
 <figcaption aria-hidden="true">Diagrama Esquemático do circuito do
 Arduino com seis sensores ópticos, seis <em>LEDs</em> e um
-<em>LCD</em></figcaption>
+<em>LCD</em>.</figcaption>
 </figure>
 
 ## 3.2 Testes
 
-Antes do projeto finalizado, foram feitos dois testes do prototipo do
+Antes do projeto finalizado, foram feitos dois testes do protótipo do
 circuito eletrônico.  
 
 1.  O primeiro para averiguar como seria o circuito na sua forma mais
-    simples, apenas um sensor óptico, um *LED* e uma placa de *LCD*, e a
-    programação básica do Arduino para essa situação.  
+    simples, apenas o *Arduino UNO*, um sensor óptico, um *LED* e uma
+    placa de *LCD*, e a programação básica do Arduino para essa
+    situação.  
     Os principais fatores considerados foram:  
 
 -   A estrutura básica do circuito.  
 -   O funcionamento do *LCD*.  
--   A programação base emplementada para unir esses componentes (sensor
-    óptico, *LED* e placa de *LCD*).  
+-   A programação básica implementada para unir esses componentes
+    (sensor óptico, *LED* e placa de *LCD*).  
 
-1.  O segundo experimento foi para ampliar o circuito, tornando mais
-    proximo do real, seis sensores e seis *LEDs*, averiguar a
-    programação como observada no Apêndice A com suas peculiaridades
-    de:  
+1.  O segundo experimento foi para ampliar o circuito, adicionando mais
+    cinco sensores ópticos e mais cinco *LEDs* (Figura ):  
 
--   Definir os pinos de cada componente eletrônico.  
+-   Averiguar a programação (como observada no Apêndice A).  
+-   Definir os pinos de cada componente eletrônico em relação ao
+    *Arduino UNO*.  
 -   A disposição e o sistema de cores definido para os *LEDs*,
     relacionando os sensores e *LEDs*.  
--   Transformação de pinos analógicos para digitais no *Arduino* através
-    de programação, para comportar todos os componentes.  
+-   Transformação de pinos analógicos para digitais no *Arduino*,
+    através de programação, para comportar todos os componentes.  
 -   Testar da estrutura condicional (*if-else*) da programação.  
--   O tempo ideal de *delay* para reconhecimento dos sensores do
-    objeto.  
+-   O tempo ideal de *delay* para reconhecimento do objeto (bola de
+    gude) pelos sensores.  
 -   Definir e testar o sistema de pontuação do jogo.  
 
 ## 3.3 Bateria
@@ -155,10 +156,35 @@ Processo de montagem:
 -   Com base nas medidas da estrutura do pinball foi possivel determinar
     a metragem de fios.  
 -   Na estrutura do pinball foram feitas aberturas para o encaixe dos
-    dispostivos eletrônicos.  
+    dispostivos eletrônicos. (figura )  
+
+<figure>
+<img src="./RMarkdown/Imagens/estrutura_aberturas.jpeg"
+style="width:30.0%"
+alt="Placa da estrutura com furos para encaixe dos dispositivos. " />
+<figcaption aria-hidden="true">Placa da estrutura com furos para encaixe
+dos dispositivos. </figcaption>
+</figure>
+
 -   Os sensores, Arduino e placa de *LCD* foram presos a estrutura do
-    pinball por cola quente.  
--   Os fios e dispositivos eletrônicos foram soldados uns aos outros.  
+    pinball por cola quente. (Figura )  
+
+<figure>
+<img src="./RMarkdown/Imagens/montagem_bb.jpeg" style="width:30.0%"
+alt="Montagem dos dispositivos eletrônicos na estrutura do pinball. " />
+<figcaption aria-hidden="true">Montagem dos dispositivos eletrônicos na
+estrutura do pinball. </figcaption>
+</figure>
+
+-   Os fios e dispositivos eletrônicos foram soldados uns aos outros.
+    (Figura )  
+
+<figure>
+<img src="./RMarkdown/Imagens/montagem.jpeg" style="width:30.0%"
+alt="Fios soldados e presos na estrutura do pinball. " />
+<figcaption aria-hidden="true">Fios soldados e presos na estrutura do
+pinball. </figcaption>
+</figure>
 
 # 5 CONCLUSÃO
 
