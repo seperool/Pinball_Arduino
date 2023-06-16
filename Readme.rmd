@@ -2,8 +2,8 @@
 title: "Projeto Pinball"
 subtitle: "Circuitos Elétricos 2"
 author:
-  - Franciellen
-  - Maria Clara
+  - Franciellen Thurle Freire Allemão
+  - Maria Clara Gonçalves de Almeida
   - Sergio Pedro Rodrigues Oliveira
 date: "`r format(Sys.time(), '%d %B %Y')`"
 committee:
@@ -13,21 +13,21 @@ committee:
 ##lot: true
 ##toc-title: SUMÁRIO
 output:
-  html_document:
-    number_sections: true
-    df_print: paged
   md_document:
     number_sections: true
     variant: markdown_github
   odt_document: 
     number_sections: true
-  github_document: 
-  pdf_document: 
-    number_sections: true
-    toc: FALSE
   word_document: 
     toc: TRUE
     number_sections: true
+  github_document: 
+  html_document:
+    number_sections: true
+    df_print: paged
+  pdf_document: 
+    number_sections: true
+    toc: FALSE
 bibliography: RMarkdown/Bibliografia_arduino.bib
 csl: RMarkdown/abnt.csl
 ---
