@@ -16,18 +16,18 @@ output:
   md_document:
     number_sections: true
     variant: markdown_github
-  html_document:
-    number_sections: true
-    df_print: paged
   word_document: 
     toc: TRUE
     number_sections: true
-  github_document: 
-  odt_document: 
+  html_document:
     number_sections: true
+    df_print: paged
+  github_document: 
   pdf_document: 
     number_sections: true
     toc: false
+  odt_document: 
+    number_sections: true
 bibliography: RMarkdown/Bibliografia_arduino.bib
 csl: RMarkdown/abnt.csl
 ---
@@ -141,6 +141,9 @@ kable(orc_disp_ele,
 
 2. [Baú da Eletrônica](https://www.baudaeletronica.com.br/)\
 <https://www.baudaeletronica.com.br/>
+
+3. [Mercado livre - Esfera De Aço Cromo 15mm - 10 Unit.](https://produto.mercadolivre.com.br/MLB-752704314-esfera-de-aco-cromo-15mm-10-uni-_JM#position=1&search_layout=stack&type=item&tracking_id=cb547da7-a3f2-460f-b5a4-5b9c2d301535)\
+<https://produto.mercadolivre.com.br/MLB-752704314-esfera-de-aco-cromo-15mm-10-uni-_JM#position=1&search_layout=stack&type=item&tracking_id=cb547da7-a3f2-460f-b5a4-5b9c2d301535>
 
 \newpage
 
