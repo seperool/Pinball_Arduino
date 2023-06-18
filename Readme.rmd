@@ -19,15 +19,21 @@ output:
   pdf_document: 
     number_sections: true
     toc: FALSE
-  html_document:
+  odt_document: 
     number_sections: true
-    df_print: paged
   github_document: 
   word_document: 
     toc: TRUE
     number_sections: true
-  odt_document: 
+  html_document:
     number_sections: true
+    df_print: paged
+header-includes:
+  - \usepackage{titling}
+  - \pretitle{\begin{center}
+    \includegraphics{./RMarkdown/azul.png}\LARGE\\}
+  - \posttitle{\end{center}}
+  - \renewcommand{\and}{\\}
 bibliography: RMarkdown/Bibliografia_arduino.bib
 csl: RMarkdown/abnt.csl
 ---
@@ -62,7 +68,6 @@ csl: RMarkdown/abnt.csl
 
 ```{r Pacotes, echo=FALSE, message=FALSE, warning=FALSE}
 library(knitr)
-
 ```
 
 \newpage
