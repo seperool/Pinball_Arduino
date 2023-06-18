@@ -16,18 +16,24 @@ output:
   md_document:
     number_sections: true
     variant: markdown_github
-  word_document: 
-    toc: TRUE
-    number_sections: true
-  html_document:
-    number_sections: true
-    df_print: paged
-  github_document: 
   pdf_document: 
     number_sections: true
     toc: false
   odt_document: 
     number_sections: true
+  github_document: 
+  html_document:
+    number_sections: true
+    df_print: paged
+  word_document: 
+    toc: TRUE
+    number_sections: true
+header-includes:
+  - \usepackage{titling}
+  - \pretitle{\begin{center}
+    \includegraphics{./RMarkdown/azul.png}\LARGE\\}
+  - \posttitle{\end{center}}
+  - \renewcommand{\and}{\\}
 bibliography: RMarkdown/Bibliografia_arduino.bib
 csl: RMarkdown/abnt.csl
 ---
