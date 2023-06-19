@@ -20,32 +20,6 @@ alt="Exemplo pinball construido a partir de Arduino " />
 Arduino </figcaption>
 </figure>
 
-## 1.2 O que é o *Arduino*
-
-O *Arduino* é uma pequena placa de microcontrolador. Contém diversos
-terminais que permitem a conexão com dispositivos externos. Os Arduinos
-podem ser energizados por um computador através de um plugue *USB*, por
-uma bateria 9V ou por uma fonte de alimentação. Eles podem ser
-programados pelo computador e, em seguida, desconectados, permitindo
-assim que trabalhem independentemente do computador.(Monk, 2013)  
-
-A principal razão da necessidade de um computador é poder baixar
-programas para a placa de *Arduino*. Uma vez instalados nela, esses
-programas podem ser executados de forma independente.(Monk, 2015)  
-
-A escolha da placa do *Arduino UNO R3*, entre as outras placas de
-Arduino, se dá por possuir um *layout* que fornece todas as entradas e
-saídas necessárias para o projeto, baixo custo e facilidade de obtenção
-(disponibilidade no mercado). O *layout* pode ser observado pela figura
-. (Evans, Noble e Hochenbaum, 2013)  
-
-<figure>
-<img src="./RMarkdown/Imagens/Layout_Arduino_Uno.png"
-style="width:50.0%" alt="Layout da Placa do Arduino UNO. " />
-<figcaption aria-hidden="true"><em>Layout</em> da Placa do <em>Arduino
-UNO</em>. </figcaption>
-</figure>
-
 # 2 LISTA DE MATERIAIS
 
 | Materiais                                      | Quantidade |
@@ -73,9 +47,35 @@ Lista de materiais
 
 # 3 DESENVOLVIMENTO
 
-## 3.1 Circuito
+## 3.1 O que é o *Arduino*?
 
-### 3.1.1 *Software* de desenho do circuito
+O *Arduino* é uma pequena placa de microcontrolador. Contém diversos
+terminais que permitem a conexão com dispositivos externos. Os Arduinos
+podem ser energizados por um computador através de um plugue *USB*, por
+uma bateria 9V ou por uma fonte de alimentação. Eles podem ser
+programados pelo computador e, em seguida, desconectados, permitindo
+assim que trabalhem independentemente do computador.(Monk, 2013)  
+
+A principal razão da necessidade de um computador é poder baixar
+programas para a placa de *Arduino*. Uma vez instalados nela, esses
+programas podem ser executados de forma independente.(Monk, 2015)  
+
+A escolha da placa do *Arduino UNO R3*, entre as outras placas de
+*Arduino*, se dá por possuir um *layout* que fornece todas as entradas e
+saídas necessárias para o projeto, baixo custo e facilidade de obtenção
+(disponibilidade no mercado). O *layout* pode ser observado pela figura
+. (Evans, Noble e Hochenbaum, 2013)  
+
+<figure>
+<img src="./RMarkdown/Imagens/Layout_Arduino_Uno.png"
+style="width:50.0%" alt="Layout da Placa do Arduino UNO. " />
+<figcaption aria-hidden="true"><em>Layout</em> da Placa do <em>Arduino
+UNO</em>. </figcaption>
+</figure>
+
+## 3.2 Circuito
+
+### 3.2.1 *Software* de desenho do circuito
 
 Para os desenhos do circuito foi utilizado o software tipo *CAD*
 [*Fritzing*](https://fritzing.org/), de codigo aberto, na versão beta. O
@@ -84,7 +84,7 @@ quando o esquemático do circuito com arduino, sendo suas vantagens uma
 biblioteca de dispositivos eletrônicos vasta, uma comunidade ativa para
 tirar dúvidas e a criação de novos dispositivos eletrônicos.  
 
-### 3.1.2 Breadboard
+### 3.2.2 Breadboard
 
 <figure>
 <img src="./RMarkdown/Imagens/pinball_bb.png"
@@ -93,7 +93,7 @@ alt="Circuito do Arduino com seis sensores ópticos, seis LEDs e um LCD. " />
 ópticos, seis <em>LEDs</em> e um <em>LCD</em>. </figcaption>
 </figure>
 
-### 3.1.3 Diagrama esquemático
+### 3.2.3 Diagrama esquemático
 
 <figure>
 <img src="./RMarkdown/Imagens/pinball_Esquematico_colorido.png"
@@ -103,7 +103,7 @@ Arduino com seis sensores ópticos, seis <em>LEDs</em> e um
 <em>LCD</em>.</figcaption>
 </figure>
 
-## 3.2 Testes
+## 3.3 Testes
 
 Antes do projeto finalizado, foram feitos dois testes do protótipo do
 circuito eletrônico.  
@@ -134,7 +134,7 @@ circuito eletrônico.
     gude) pelos sensores.  
 -   Definir e testar o sistema de pontuação do jogo.  
 
-## 3.3 Bateria
+## 3.4 Bateria
 
 Sobre a escolha da bateria, o tipo de bateria que ofereceria um melhor
 desempenho para o projeto funcionar por varias horas e ainda sendo
