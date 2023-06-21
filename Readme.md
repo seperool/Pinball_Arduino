@@ -149,7 +149,32 @@ aproximadamente R$
 [25,00](https://www.magazineluiza.com.br/bateria-duracell-alcalina-9v-preto-e-laranja-9v-1/p/dc3hca11h7/cj/batr/).
 Esta última serve aos propositos do projeto para demonstração.  
 
-# 4 MONTAGEM DO PINBALL
+## 3.5 Desenho da estrutura
+
+O desenho do Pinball foi desenvolvido com auxilio do *software*
+[SolidWorks](https://www.solidworks.com/pt-br).  
+O prototipo pode ser observado nas figuras , e .  
+
+<figure>
+<img src="./RMarkdown/Imagens/Estrutura_ortogonal.jpeg"
+style="width:30.0%" alt="Prototipo vista ortogonal." />
+<figcaption aria-hidden="true">Prototipo vista ortogonal.</figcaption>
+</figure>
+
+<figure>
+<img src="./RMarkdown/Imagens/Estrutura_vist_dir.jpeg"
+style="width:30.0%" alt="Prototipo vista da lateral direita." />
+<figcaption aria-hidden="true">Prototipo vista da lateral
+direita.</figcaption>
+</figure>
+
+<figure>
+<img src="./RMarkdown/Imagens/Estrutura_vist_top.jpeg"
+style="width:30.0%" alt="Prototipo vista superior." />
+<figcaption aria-hidden="true">Prototipo vista superior.</figcaption>
+</figure>
+
+# 4 MONTAGEM
 
 Processo de montagem:  
 
@@ -160,7 +185,7 @@ Processo de montagem:
 
 <figure>
 <img src="./RMarkdown/Imagens/estrutura_aberturas.jpeg"
-style="width:30.0%"
+style="width:25.0%"
 alt="Placa da estrutura com furos para encaixe dos dispositivos. " />
 <figcaption aria-hidden="true">Placa da estrutura com furos para encaixe
 dos dispositivos. </figcaption>
@@ -170,7 +195,7 @@ dos dispositivos. </figcaption>
     pinball por cola quente. (Figura )  
 
 <figure>
-<img src="./RMarkdown/Imagens/montagem_bb.jpeg" style="width:30.0%"
+<img src="./RMarkdown/Imagens/montagem_bb.jpeg" style="width:25.0%"
 alt="Montagem dos dispositivos eletrônicos na estrutura do pinball. " />
 <figcaption aria-hidden="true">Montagem dos dispositivos eletrônicos na
 estrutura do pinball. </figcaption>
@@ -180,7 +205,7 @@ estrutura do pinball. </figcaption>
     (Figura )  
 
 <figure>
-<img src="./RMarkdown/Imagens/montagem.jpeg" style="width:30.0%"
+<img src="./RMarkdown/Imagens/montagem.jpeg" style="width:25.0%"
 alt="Fios soldados e presos na estrutura do pinball. " />
 <figcaption aria-hidden="true">Fios soldados e presos na estrutura do
 pinball. </figcaption>

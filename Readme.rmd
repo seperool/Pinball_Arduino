@@ -174,25 +174,44 @@ Sobre a escolha da bateria, o tipo de bateria que ofereceria um melhor desempenh
 
 \newpage
 
-# MONTAGEM DO PINBALL
+## Desenho da estrutura
+
+O desenho do Pinball foi desenvolvido com auxilio do *software* [SolidWorks](https://www.solidworks.com/pt-br).\
+O prototipo pode ser observado nas figuras \ref{est_ort}, \ref{est_dir} e \ref{est_top}.\
+
+
+![Prototipo vista ortogonal.\label{est_ort}](./RMarkdown/Imagens/Estrutura_ortogonal.jpeg){width=30%}
+
+
+
+![Prototipo vista da lateral direita.\label{est_dir}](./RMarkdown/Imagens/Estrutura_vist_dir.jpeg){width=30%}
+
+
+
+![Prototipo vista superior.\label{est_top}](./RMarkdown/Imagens/Estrutura_vist_top.jpeg){width=30%}
+
+
+\newpage
+
+# MONTAGEM
 
 Processo de montagem:\
 
 - Com base nas medidas da estrutura do pinball foi possivel determinar a metragem de fios.\
 - Na estrutura do pinball foram feitas aberturas para o encaixe dos dispostivos eletrônicos. (figura \ref{placa_est})\
 
-![Placa da estrutura com furos para encaixe dos dispositivos. \label{placa_est}](./RMarkdown/Imagens/estrutura_aberturas.jpeg){width=30%}
+![Placa da estrutura com furos para encaixe dos dispositivos. \label{placa_est}](./RMarkdown/Imagens/estrutura_aberturas.jpeg){width=25%}
 
 - Os sensores, Arduino e placa de *LCD* foram presos a estrutura do pinball por cola quente. (Figura \ref{montagem_disp})\
 
 
-![Montagem dos dispositivos eletrônicos na estrutura do pinball. \label{montagem_disp}](./RMarkdown/Imagens/montagem_bb.jpeg){width=30%}
+![Montagem dos dispositivos eletrônicos na estrutura do pinball. \label{montagem_disp}](./RMarkdown/Imagens/montagem_bb.jpeg){width=25%}
 
 
 - Os fios e dispositivos eletrônicos foram soldados uns aos outros. (Figura \ref{fios})\
 
 
-![Fios soldados e presos na estrutura do pinball. \label{fios}](./RMarkdown/Imagens/montagem.jpeg){width=30%}
+![Fios soldados e presos na estrutura do pinball. \label{fios}](./RMarkdown/Imagens/montagem.jpeg){width=25%}
 
 
 \newpage
