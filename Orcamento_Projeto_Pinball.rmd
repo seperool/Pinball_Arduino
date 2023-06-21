@@ -16,18 +16,18 @@ output:
   md_document:
     number_sections: true
     variant: markdown_github
-  odt_document: 
-    number_sections: true
-  github_document: 
   word_document: 
     toc: TRUE
     number_sections: true
-  html_document:
-    number_sections: true
-    df_print: paged
+  github_document: 
   pdf_document: 
     number_sections: true
     toc: false
+  html_document:
+    number_sections: true
+    df_print: paged
+  odt_document: 
+    number_sections: true
 header-includes:
   - \usepackage{titling}
   - \pretitle{\begin{center}
