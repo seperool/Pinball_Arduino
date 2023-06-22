@@ -13,17 +13,17 @@ committee:
 ##lot: true
 ##toc-title: SUMÁRIO
 output:
-  md_document:
-    number_sections: true
-    variant: markdown_github
-  word_document: 
-    toc: TRUE
-    number_sections: true
   html_document:
     number_sections: true
     df_print: paged
-  github_document: 
+  md_document:
+    number_sections: true
+    variant: markdown_github
   odt_document: 
+    number_sections: true
+  github_document: 
+  word_document: 
+    toc: TRUE
     number_sections: true
   pdf_document: 
     number_sections: true
@@ -177,18 +177,31 @@ Sobre a escolha da bateria, o tipo de bateria que ofereceria um melhor desempenh
 ## Desenho da estrutura
 
 O desenho do Pinball foi desenvolvido com auxilio do *software* [SolidWorks](https://www.solidworks.com/pt-br).\
-O prototipo pode ser observado nas figuras \ref{est_ort}, \ref{est_dir} e \ref{est_top}.\
+O prototipo pode ser observado na figura \ref{prototipo}.\
 
 
-![Prototipo vista ortogonal.\label{est_ort}](./RMarkdown/Imagens/Estrutura_ortogonal.jpeg){width=30%}
+![Pinball prototipo.\label{prototipo}](./RMarkdown/Imagens/jogo.jpeg){width=30%}
 
 
-
-![Prototipo vista da lateral direita.\label{est_dir}](./RMarkdown/Imagens/Estrutura_vist_dir.jpeg){width=30%}
-
+Alguns detalhes como a rampa ficam evidenciadas na figura \ref{rampa} e o mecanismo de lançamento da esfera na figura \ref{mecanismo_lançamento}.\
 
 
-![Prototipo vista superior.\label{est_top}](./RMarkdown/Imagens/Estrutura_vist_top.jpeg){width=30%}
+![Detalhe da rampa.\label{rampa}](./RMarkdown/Imagens/rampa.jpeg){width=30%}
+
+
+![Mecanismo de lançamento da esfera.\label{mecanismo_lançamento}](./RMarkdown/Imagens/mecanismo_esfera.jpeg){width=30%}
+
+
+As vistas principais do Pinball nas figuras \ref{est_ort}, \ref{est_dir} e \ref{est_top}.\
+ 
+ 
+![Vista ortogonal.\label{est_ort}](./RMarkdown/Imagens/prototipo.jpeg){width=30%}
+
+
+![Vista da lateral direita.\label{est_dir}](./RMarkdown/Imagens/Estrutura_vist_dir.jpeg){width=30%}
+
+
+![Vista superior.\label{est_top}](./RMarkdown/Imagens/top.jpeg){width=30%}
 
 
 \newpage

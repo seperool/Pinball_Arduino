@@ -153,25 +153,48 @@ Esta última serve aos propositos do projeto para demonstração.
 
 O desenho do Pinball foi desenvolvido com auxilio do *software*
 [SolidWorks](https://www.solidworks.com/pt-br).  
-O prototipo pode ser observado nas figuras , e .  
+O prototipo pode ser observado na figura .  
 
 <figure>
-<img src="./RMarkdown/Imagens/Estrutura_ortogonal.jpeg"
-style="width:30.0%" alt="Prototipo vista ortogonal." />
-<figcaption aria-hidden="true">Prototipo vista ortogonal.</figcaption>
+<img src="./RMarkdown/Imagens/jogo.jpeg" style="width:30.0%"
+alt="Pinball prototipo." />
+<figcaption aria-hidden="true">Pinball prototipo.</figcaption>
+</figure>
+
+Alguns detalhes como a rampa ficam evidenciadas na figura e o mecanismo
+de lançamento da esfera na figura .  
+
+<figure>
+<img src="./RMarkdown/Imagens/rampa.jpeg" style="width:30.0%"
+alt="Detalhe da rampa." />
+<figcaption aria-hidden="true">Detalhe da rampa.</figcaption>
+</figure>
+
+<figure>
+<img src="./RMarkdown/Imagens/mecanismo_esfera.jpeg" style="width:30.0%"
+alt="Mecanismo de lançamento da esfera." />
+<figcaption aria-hidden="true">Mecanismo de lançamento da
+esfera.</figcaption>
+</figure>
+
+As vistas principais do Pinball nas figuras , e .  
+
+<figure>
+<img src="./RMarkdown/Imagens/prototipo.jpeg" style="width:30.0%"
+alt="Vista ortogonal." />
+<figcaption aria-hidden="true">Vista ortogonal.</figcaption>
 </figure>
 
 <figure>
 <img src="./RMarkdown/Imagens/Estrutura_vist_dir.jpeg"
-style="width:30.0%" alt="Prototipo vista da lateral direita." />
-<figcaption aria-hidden="true">Prototipo vista da lateral
-direita.</figcaption>
+style="width:30.0%" alt="Vista da lateral direita." />
+<figcaption aria-hidden="true">Vista da lateral direita.</figcaption>
 </figure>
 
 <figure>
-<img src="./RMarkdown/Imagens/Estrutura_vist_top.jpeg"
-style="width:30.0%" alt="Prototipo vista superior." />
-<figcaption aria-hidden="true">Prototipo vista superior.</figcaption>
+<img src="./RMarkdown/Imagens/top.jpeg" style="width:30.0%"
+alt="Vista superior." />
+<figcaption aria-hidden="true">Vista superior.</figcaption>
 </figure>
 
 # 4 MONTAGEM
