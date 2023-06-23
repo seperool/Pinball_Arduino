@@ -2,7 +2,7 @@
 title: "Projeto Pinball"
 subtitle: "Circuitos Elétricos 2"
 author:
-  - Franciellen Thurle Freire Allemão
+  - Franciellen Thurler Freire Allemão
   - Maria Clara Gonçalves de Almeida
   - Sergio Pedro Rodrigues Oliveira
 date: "`r format(Sys.time(), '%d %B %Y')`"
@@ -13,21 +13,21 @@ committee:
 ##lot: true
 ##toc-title: SUMÁRIO
 output:
-  html_document:
-    number_sections: true
-    df_print: paged
-  md_document:
-    number_sections: true
-    variant: markdown_github
-  odt_document: 
-    number_sections: true
-  github_document: 
-  word_document: 
-    toc: TRUE
-    number_sections: true
   pdf_document: 
     number_sections: true
     toc: FALSE
+  md_document:
+    number_sections: true
+    variant: markdown_github
+  word_document: 
+    toc: TRUE
+    number_sections: true
+  github_document: 
+  html_document:
+    number_sections: true
+    df_print: paged
+  odt_document: 
+    number_sections: true
 header-includes:
   - \usepackage{titling}
   - \pretitle{\begin{center}
@@ -106,9 +106,11 @@ materiais <- c("Arduino UNO R3",
                   "Protoboard",
                   "Suporte Bateria 9V Plug P4",
                   "Bateria Recarregável 9v De Litio 680mah Rontek",
-                  "Esfera De Aço Cromo 15mm"
+                  "Esfera De Aço Cromo 15mm",
+                  "Chapa de MDF cru 3mm",
+                  "Chapa de acrílico 2,4mm"
                   )
-QDT <- c(1,1,1,1,2,2,6,6,6,1,1,6,1,1,2,1,1,1)
+QDT <- c(1,1,1,1,2,2,6,6,6,1,1,6,1,1,2,1,1,1,1,1)
 tbl_mat <- data.frame(materiais,QDT)
 
 #Tabela

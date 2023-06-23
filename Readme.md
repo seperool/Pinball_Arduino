@@ -42,6 +42,8 @@ Arduino </figcaption>
 | Suporte Bateria 9V Plug P4                     |     1      |
 | Bateria Recarregável 9v De Litio 680mah Rontek |     1      |
 | Esfera De Aço Cromo 15mm                       |     1      |
+| Chapa de MDF cru 3mm                           |     1      |
+| Chapa de acrílico 2,4mm                        |     1      |
 
 Lista de materiais
 
