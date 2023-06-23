@@ -2,7 +2,7 @@
 title: "Orçamento Projeto Pinball"
 subtitle: "Circuitos Elétricos 2"
 author:
-  - Franciellen Thurle Freire Allemão
+  - Franciellen Thurler Freire Allemão
   - Maria Clara Gonçalves de Almeida
   - Sergio Pedro Rodrigues Oliveira
 date: "`r format(Sys.time(), '%d %B %Y')`"
@@ -13,21 +13,21 @@ committee:
 #lot: true
 #toc-title: SUMÁRIO
 output:
-  md_document:
-    number_sections: true
-    variant: markdown_github
-  word_document: 
-    toc: TRUE
-    number_sections: true
-  github_document: 
-  pdf_document: 
-    number_sections: true
-    toc: false
   html_document:
     number_sections: true
     df_print: paged
   odt_document: 
     number_sections: true
+  github_document: 
+  word_document: 
+    toc: TRUE
+    number_sections: true
+  pdf_document: 
+    number_sections: true
+    toc: false
+  md_document:
+    number_sections: true
+    variant: markdown_github
 header-includes:
   - \usepackage{titling}
   - \pretitle{\begin{center}
@@ -88,9 +88,11 @@ O projeto é um pinball, de dimensões portatil (um pouco maior que uma caixa de
 
 ```{r Orcamento_peças_mecânica, echo=FALSE, message=FALSE, warning=FALSE}
 #data.frame
-materiais_mec <- c("Esfera De Aço Cromo 15mm - 10 Unit.")
-qtd_met_mec <- c(1)
-preco_unit_met_mec <- c(25.81)
+materiais_mec <- c("Esfera De Aço Cromo 15mm - 10 Unit.",
+                   "Chapa de MDF cru 3mm",
+                   "Chapa de acrílico 2,4mm")
+qtd_met_mec <- c(1,1,1)
+preco_unit_met_mec <- c(25.81,32.45,70)
 valor_total_mec <- qtd_met_mec*preco_unit_met_mec
 orc_mec <- data.frame(materiais_mec,qtd_met_mec,preco_unit_met_mec,valor_total_mec)
 
