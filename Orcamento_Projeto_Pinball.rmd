@@ -19,12 +19,12 @@ output:
   odt_document: 
     number_sections: true
   github_document: 
-  word_document: 
-    toc: TRUE
-    number_sections: true
   pdf_document: 
     number_sections: true
     toc: false
+  word_document: 
+    toc: TRUE
+    number_sections: true
   md_document:
     number_sections: true
     variant: markdown_github
@@ -163,3 +163,6 @@ kable(orc_disp_ele,
 \newpage
 
 # CONCLUSÃO
+
+Apesar do preço orçado para o projeto (R$ `r sum(valor_total_disp)+sum(valor_total_mec)`), muito dos materiais eram de posse dos alunos. Sendo assim, já estavam disponíveis para o desenvolvimento do projeto sem a necessidade de compra, em sua maioria a parte dos dispositivos eletrônicos. O que barateou bastante o desenvolvimento.\
+As dimensões das placas de MDF e acrílico foram orçadas com base nos desenhos da estrutura, desenvolvido em SolidWorks.\
