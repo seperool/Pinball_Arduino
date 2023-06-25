@@ -13,21 +13,21 @@ committee:
 ##lot: true
 ##toc-title: SUMÁRIO
 output:
-  pdf_document: 
-    number_sections: true
-    toc: FALSE
   md_document:
     number_sections: true
     variant: markdown_github
-  word_document: 
-    toc: TRUE
-    number_sections: true
-  github_document: 
   html_document:
     number_sections: true
     df_print: paged
   odt_document: 
     number_sections: true
+  github_document: 
+  word_document: 
+    toc: TRUE
+    number_sections: true
+  pdf_document: 
+    number_sections: true
+    toc: FALSE
 header-includes:
   - \usepackage{titling}
   - \pretitle{\begin{center}
@@ -210,7 +210,7 @@ As vistas principais do Pinball nas figuras \ref{est_ort}, \ref{est_dir} e \ref{
 
 # MONTAGEM
 
-Processo de montagem:\
+## Montagem do circuito
 
 - Com base nas medidas da estrutura do pinball foi possivel determinar a metragem de fios.\
 - Na estrutura do pinball foram feitas aberturas para o encaixe dos dispostivos eletrônicos. (figura \ref{placa_est})\
@@ -222,11 +222,21 @@ Processo de montagem:\
 
 ![Montagem dos dispositivos eletrônicos na estrutura do pinball. \label{montagem_disp}](./RMarkdown/Imagens/montagem_bb.jpeg){width=25%}
 
+\newpage
 
 - Os fios e dispositivos eletrônicos foram soldados uns aos outros. (Figura \ref{fios})\
 
-
 ![Fios soldados e presos na estrutura do pinball. \label{fios}](./RMarkdown/Imagens/montagem.jpeg){width=25%}
+
+
+\newpage
+
+## Montagem da estrutura
+
+![Estrutura desmontada.\label{est_desmont}](RMarkdown/Imagens/Estrutura_desmontada.jpeg){width=25%}
+
+
+![Estutura montada.\label{est_mont}](./RMarkdown/Imagens/Estrutura_1.jpeg){width=25%}
 
 
 \newpage

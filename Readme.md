@@ -201,7 +201,7 @@ alt="Vista superior." />
 
 # 4 MONTAGEM
 
-Processo de montagem:  
+## 4.1 Montagem do circuito
 
 -   Com base nas medidas da estrutura do pinball foi possivel determinar
     a metragem de fios.  
@@ -234,6 +234,20 @@ estrutura do pinball. </figcaption>
 alt="Fios soldados e presos na estrutura do pinball. " />
 <figcaption aria-hidden="true">Fios soldados e presos na estrutura do
 pinball. </figcaption>
+</figure>
+
+## 4.2 Montagem da estrutura
+
+<figure>
+<img src="RMarkdown/Imagens/Estrutura_desmontada.jpeg"
+style="width:25.0%" alt="Estrutura desmontada." />
+<figcaption aria-hidden="true">Estrutura desmontada.</figcaption>
+</figure>
+
+<figure>
+<img src="./RMarkdown/Imagens/Estrutura_1.jpeg" style="width:25.0%"
+alt="Estutura montada." />
+<figcaption aria-hidden="true">Estutura montada.</figcaption>
 </figure>
 
 # 5 CONCLUSÃO
