@@ -16,17 +16,17 @@ output:
   md_document:
     number_sections: true
     variant: markdown_github
-  word_document: 
-    toc: TRUE
-    number_sections: true
   pdf_document: 
     number_sections: true
     toc: FALSE
-  github_document: 
   html_document:
     number_sections: true
     df_print: paged
+  github_document: 
   odt_document: 
+    number_sections: true
+  word_document: 
+    toc: TRUE
     number_sections: true
 header-includes:
   - \usepackage{titling}
@@ -161,10 +161,10 @@ Os principais fatores considerados foram:\
 - A estrutura básica do circuito.\
 - O funcionamento do *LCD*.\
 - A programação básica implementada para unir esses componentes (sensor óptico, *LED* e placa de *LCD*).\
-2. O segundo experimento foi para ampliar o circuito, adicionando mais cinco sensores ópticos e mais cinco *LEDs* (Figura \ref{circuito_bb}):\
+2. O segundo experimento foi para ampliar o circuito, adicionando mais cinco sensores ópticos e mais cinco *LED*s (Figura \ref{circuito_bb}):\
 - Averiguar a programação (como observada no Apêndice A).\
 - Definir os pinos de cada componente eletrônico em relação ao *Arduino UNO*.\
-- A disposição e o sistema de cores definido para os *LEDs*, relacionando os sensores e *LEDs*.\
+- A disposição e o sistema de cores definido para os *LED*s, relacionando os sensores e *LED*s.\
 - Transformação de pinos analógicos para digitais no *Arduino*, através de programação, para comportar todos os componentes.\
 - Testar da estrutura condicional (*if-else*) da programação.\
 - O tempo ideal de *delay* para reconhecimento do objeto (bola de gude) pelos sensores.\
