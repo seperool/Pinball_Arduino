@@ -19,12 +19,12 @@ int pinoLed_6 = 8; //Pino digital utilizado pelo LED 6 - Azul
 // Vermelho = LED 4 = 0 ponto
 
 //Definindo pinos dos sensores óptico tcrt5000
-int pinoSensor_1 = 14; //Pino analogico A0 transformado em pino digital utilizado pelo sensor 1
-int pinoSensor_2 = 15; //Pino analogico A1 transformado em pino digital utilizado pelo sensor 2
-int pinoSensor_3 = 16; //Pino analogico A2 transformado em pino digital utilizado pelo sensor 3
-int pinoSensor_4 = 17; //Pino analogico A3 transformado em pino digital utilizado pelo sensor 4
-int pinoSensor_5 = 18; //Pino analogico A4 transformado em pino digital utilizado pelo sensor 5
-int pinoSensor_6 = 19; //Pino analogico A5 transformado em pino digital utilizado pelo sensor 6
+int pinoSensor_1 = 18; //Pino analogico A0 transformado em pino digital utilizado pelo sensor 1
+int pinoSensor_2 = 17; //Pino analogico A1 transformado em pino digital utilizado pelo sensor 2
+int pinoSensor_3 = 15; //Pino analogico A2 transformado em pino digital utilizado pelo sensor 3
+int pinoSensor_4 = 19; //Pino analogico A3 transformado em pino digital utilizado pelo sensor 4 (vermelho)
+int pinoSensor_5 = 16; //Pino analogico A4 transformado em pino digital utilizado pelo sensor 5
+int pinoSensor_6 = 14; //Pino analogico A5 transformado em pino digital utilizado pelo sensor 6
 
 // Relação entre LED e sensores - Pinos
 // pinoSensor_1 -> pinoLed_1 - Pinos A0 e 13
