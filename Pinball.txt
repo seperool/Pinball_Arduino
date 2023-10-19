@@ -19,12 +19,12 @@ int pinoLed_6 = 8; //Pino digital utilizado pelo LED 6 - Azul
 // Vermelho = LED 4 = 0 ponto
 
 //Definindo pinos dos sensores óptico tcrt5000
-int pinoSensor_1 = 14; //Pino analogico A0 transformado em pino digital utilizado pelo sensor 1
-int pinoSensor_2 = 15; //Pino analogico A1 transformado em pino digital utilizado pelo sensor 2
-int pinoSensor_3 = 16; //Pino analogico A2 transformado em pino digital utilizado pelo sensor 3
-int pinoSensor_4 = 17; //Pino analogico A3 transformado em pino digital utilizado pelo sensor 4
-int pinoSensor_5 = 18; //Pino analogico A4 transformado em pino digital utilizado pelo sensor 5
-int pinoSensor_6 = 19; //Pino analogico A5 transformado em pino digital utilizado pelo sensor 6
+int pinoSensor_1 = 18; //Pino analogico A0 transformado em pino digital utilizado pelo sensor 1
+int pinoSensor_2 = 17; //Pino analogico A1 transformado em pino digital utilizado pelo sensor 2
+int pinoSensor_3 = 15; //Pino analogico A2 transformado em pino digital utilizado pelo sensor 3
+int pinoSensor_4 = 19; //Pino analogico A3 transformado em pino digital utilizado pelo sensor 4 (vermelho)
+int pinoSensor_5 = 16; //Pino analogico A4 transformado em pino digital utilizado pelo sensor 5
+int pinoSensor_6 = 14; //Pino analogico A5 transformado em pino digital utilizado pelo sensor 6
 
 // Relação entre LED e sensores - Pinos
 // pinoSensor_1 -> pinoLed_1 - Pinos A0 e 13
@@ -73,10 +73,10 @@ void loop() {
     digitalWrite(pinoLed_1, HIGH); //Acende o LED 1 - Azul
     point=point+1; //Adiciona 1 ponto
   }else if(digitalRead(pinoSensor_2) == LOW){ //Se a leitura do sensor 2 (Verde)) for igual a LOW, faz
-	digitalWrite(pinoLed_2, HIGH); //Acende o LED 2 - Verde
+		digitalWrite(pinoLed_2, HIGH); //Acende o LED 2 - Verde
     point=point+2; //Adiciona 2 ponto
   }else if(digitalRead(pinoSensor_3) == LOW){ //Se a leitura do sensor 3 (Amarelo) for igual a LOW, faz
-	digitalWrite(pinoLed_3, HIGH); //Acende o LED 3 - Amarelo
+		digitalWrite(pinoLed_3, HIGH); //Acende o LED 3 - Amarelo
     point=point+3; //Adiciona 3 ponto
   }else if(digitalRead(pinoSensor_5) == LOW){ //Se a leitura do sensor 5 (Verde) for igual a LOW, faz
     digitalWrite(pinoLed_5, HIGH); //Acende o LED 5 - Verde
@@ -85,7 +85,7 @@ void loop() {
     digitalWrite(pinoLed_6, HIGH); //Acende o LED 6 - Azul
     point=point+1; //Adiciona 1 ponto
   }else if(digitalRead(pinoSensor_4) == LOW){ //Se a leitura do sensor 4 (Vermelho) for igual a LOW, faz
-	digitalWrite(pinoLed_4, HIGH); //Acende o LED 4 - Vermelho
+		digitalWrite(pinoLed_4, HIGH); //Acende o LED 4 - Vermelho
     point=0; //Reinicia a contagem
   }
   
