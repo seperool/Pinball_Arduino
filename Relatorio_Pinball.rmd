@@ -13,18 +13,18 @@ committee:
 ##lot: true
 ##toc-title: SUMÁRIO
 output:
+  odt_document: 
+    number_sections: true
   md_document:
     number_sections: true
     variant: markdown_github
-  pdf_document: 
-    number_sections: true
-    toc: FALSE
   html_document:
     number_sections: true
     df_print: paged
   github_document: 
-  odt_document: 
+  pdf_document: 
     number_sections: true
+    toc: FALSE
   word_document: 
     toc: TRUE
     number_sections: true
@@ -108,9 +108,16 @@ materiais <- c("Arduino UNO R3",
                   "Bateria Recarregável 9v De Litio 680mah Rontek",
                   "Esfera De Aço Cromo 15mm",
                   "Chapa de MDF cru 3mm",
-                  "Chapa de acrílico 2,4mm"
+                  "Chapa de acrílico 2,4mm",
+                  "Esfera De Aço Cromo 15mm - 10 Unit.",
+                  "Parafuso francês 6mm.",
+                  "Parafuso francês 10mm.",
+                  "Porcas",
+                  "Molas",
+                  "Pistola de cola quente",
+                  "Tubo de cola quente fino"
                   )
-QDT <- c(1,1,1,1,2,2,6,6,6,1,1,6,1,1,2,1,1,1,1,1)
+QDT <- c(1,1,1,1,2,2,6,6,6,1,1,6,1,1,2,1,1,1,1,1,1,1,2,7,4,1,2)
 tbl_mat <- data.frame(materiais,QDT)
 
 #Tabela
